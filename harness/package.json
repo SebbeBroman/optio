@@ -1,0 +1,13 @@
+{
+  "name": "optio-harness",
+  "version": "0.0.1",
+  "private": true,
+  "type": "module",
+  "description": "Differential oracle harness for optio vs highs-js",
+  "scripts": {
+    "oracle": "node src/oracle.mjs",
+    "oracle:optio": "node src/oracle.mjs --optio",
+    "gen-lp": "node tools/gen-lp.mjs",
+    "native": "node src/native.mjs"
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "name": "optio",
+  "version": "0.0.1",
+  "description": "Data-oriented LP/MIP solver in WebAssembly (browser-first, works in Node and Bun)",
+  "type": "module",
+  "main": "./index.cjs",
+  "module": "./index.js",
+  "types": "./index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./index.d.ts",
+      "browser": "./index.js",
+      "import": "./index.js",
+      "require": "./index.cjs",
+      "default": "./index.js"
+    },
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "index.js",
+    "index.cjs",
+    "index.d.ts",
+    "solver.js",
+    "state.js",
+    "wasm/",
+    "README.md",
+    "LICENSE"
+  ],
+  "sideEffects": false,
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "build": "node build.mjs",
+    "prepublishOnly": "node build.mjs && node test.mjs && node test-http.mjs",
+    "test": "node test.mjs",
+    "test:bun": "bun test.mjs",
+    "smoke": "node serve.mjs"
+  },
+  "keywords": [
+    "lp",
+    "mip",
+    "milp",
+    "solver",
+    "optimization",
+    "wasm",
+    "webassembly"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SebbeBroman/optio.git"
+  },
+  "bugs": {
+    "url": "https://github.com/SebbeBroman/optio/issues"
+  },
+  "homepage": "https://github.com/SebbeBroman/optio#readme"
+}

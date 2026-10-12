@@ -1,0 +1,20 @@
+[package]
+name = "optio-bench"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+description = "Native benchmark / oracle runner for optio"
+
+[[bin]]
+name = "optio-bench"
+path = "src/main.rs"
+
+[features]
+# Forward the core's simplex profiling instrumentation.
+profiling = ["optio-core/profiling"]
+# Native multi-core (rayon) search in the core.
+parallel = ["optio-core/parallel"]
+
+[dependencies]
+optio-core = { path = "../core" }
+serde_json = "1.0.151"

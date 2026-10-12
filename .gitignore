@@ -1,0 +1,42 @@
+/target
+/pkg
+/pkg-web
+/npm/wasm
+/npm/*.tgz
+/dist
+*.profraw
+*.profdata
+node_modules
+.DS_Store
+harness/oracle-report.json
+harness/native-report.json
+
+# Local Python environments, caches, and process output.
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+oracle-venv/
+*.log
+*.tmp
+
+# Superseded profiling experiments; final reports and proof witnesses are kept.
+/docs/planning-improvements-2026-10-11/experimental-*.json
+/docs/planning-improvements-2026-10-11/initial.json
+/docs/planning-improvements-2026-10-11/native-preflight.json
+/docs/optimality-2026-10-11/background-task.json
+
+# Raw, regenerable solver run dumps under docs (megabyte-per-run JSON). Curated
+# READMEs, small summaries/metadata, witnesses and reference bounds stay in git.
+/docs/**/*-regressions.json
+/docs/**/*-runs.json
+/docs/**/*-ablation.json
+/docs/**/certification-smoke.json
+/docs/**/native-stages.json
+/docs/**/repeated-results.json
+/docs/**/results.json
+/docs/**/reviewed-smoke.json
+/docs/**/suite.json
+/docs/**/validated-results.json
+/docs/**/warm-wasm.json
+/docs/**/web-smoke.json

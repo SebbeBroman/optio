@@ -1,0 +1,2 @@
+# Preserve original LP exports byte-for-byte for exact-hash certificates.
+*.lp whitespace=-blank-at-eol

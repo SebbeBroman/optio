@@ -1,0 +1,614 @@
+[
+  {
+    "runtime": "wasm",
+    "case": "small",
+    "config": true,
+    "objective": 314.9,
+    "samplesMs": {
+      "before": [
+        3.3260410000000036,
+        3.2285830000000004,
+        3.332167000000002,
+        3.232459000000002,
+        3.3777919999999995,
+        3.383375000000001,
+        3.3838749999999997
+      ],
+      "after": [
+        3.255375000000001,
+        3.358875000000001,
+        3.274583,
+        3.1914169999999977,
+        3.1970829999999992,
+        3.282084000000001,
+        3.2322500000000005
+      ]
+    },
+    "medianMs": {
+      "before": 3.332167000000002,
+      "after": 3.255375000000001
+    },
+    "medianPhaseMs": {
+      "before": {
+        "presolve": 0.15441700000000044,
+        "heuristic": 0.05479200000000142,
+        "localSearch": 0,
+        "cuts": 0,
+        "boundCertificate": 1.021000000000001,
+        "branchAndBound": 0,
+        "nodeLpWorkerSeconds": 0
+      },
+      "after": {
+        "presolve": 0.1503339999999985,
+        "heuristic": 0.05433300000000016,
+        "localSearch": 0,
+        "cuts": 0,
+        "boundCertificate": 0.9862499999999975,
+        "branchAndBound": 0,
+        "nodeLpWorkerSeconds": 0
+      }
+    },
+    "speedup": 1.0235892946281153
+  },
+  {
+    "runtime": "wasm",
+    "case": "small",
+    "config": false,
+    "objective": 314.9,
+    "samplesMs": {
+      "before": [
+        4.839541999999998,
+        5.121958000000003,
+        4.535457999999998,
+        4.593875000000001,
+        4.549333000000001,
+        4.544041,
+        4.4864580000000025
+      ],
+      "after": [
+        4.496542000000002,
+        4.512542,
+        4.902792000000002,
+        4.569208,
+        4.504541,
+        4.378457999999998,
+        4.6043330000000005
+      ]
+    },
+    "medianMs": {
+      "before": 4.549333000000001,
+      "after": 4.512542
+    },
+    "medianPhaseMs": {
+      "before": {
+        "presolve": 0.17966600000000194,
+        "heuristic": 2.040040999999996,
+        "localSearch": 0,
+        "cuts": 0,
+        "boundCertificate": 0.3138749999999982,
+        "branchAndBound": 0,
+        "nodeLpWorkerSeconds": 0
+      },
+      "after": {
+        "presolve": 0.16545800000000027,
+        "heuristic": 2.050208999999997,
+        "localSearch": 0,
+        "cuts": 0,
+        "boundCertificate": 0.2531249999999999,
+        "branchAndBound": 0,
+        "nodeLpWorkerSeconds": 0
+      }
+    },
+    "speedup": 1.0081530543095225
+  },
+  {
+    "runtime": "wasm",
+    "case": "medium",
+    "config": true,
+    "objective": 3096.8,
+    "samplesMs": {
+      "before": [
+        85.279875,
+        85.651417,
+        85.475917,
+        88.639583,
+        85.749084,
+        86.484,
+        85.338667
+      ],
+      "after": [
+        66.22158300000001,
+        65.426084,
+        65.583709,
+        66.078166,
+        65.400958,
+        65.603667,
+        66.273584
+      ]
+    },
+    "medianMs": {
+      "before": 85.651417,
+      "after": 65.603667
+    },
+    "medianPhaseMs": {
+      "before": {
+        "presolve": 1.2803750000000003,
+        "heuristic": 0.10329099999999841,
+        "localSearch": 48.95620799999999,
+        "cuts": 0,
+        "boundCertificate": 33.303,
+        "branchAndBound": 0,
+        "nodeLpWorkerSeconds": 0
+      },
+      "after": {
+        "presolve": 1.2720419999999975,
+        "heuristic": 0.1048750000000008,
+        "localSearch": 39.10575000000001,
+        "cuts": 0,
+        "boundCertificate": 23.249375,
+        "branchAndBound": 0,
+        "nodeLpWorkerSeconds": 0
+      }
+    },
+    "speedup": 1.30558886289085
+  },
+  {
+    "runtime": "wasm",
+    "case": "medium",
+    "config": false,
+    "objective": 3096.8,
+    "samplesMs": {
+      "before": [
+        86.07604099999999,
+        85.47708399999999,
+        85.738375,
+        85.39291700000001,
+        84.751,
+        85.568083,
+        87.117167
+      ],
+      "after": [
+        65.28075,
+        65.88345799999999,
+        66.53133299999999,
+        65.852292,
+        64.090792,
+        65.567417,
+        64.830291
+      ]
+    },
+    "medianMs": {
+      "before": 85.568083,
+      "after": 65.567417
+    },
+    "medianPhaseMs": {
+      "before": {
+        "presolve": 1.3035420000000013,
+        "heuristic": 55.218458,
+        "localSearch": 0,
+        "cuts": 0,
+        "boundCertificate": 26.81016700000001,
+        "branchAndBound": 0,
+        "nodeLpWorkerSeconds": 0
+      },
+      "after": {
+        "presolve": 1.2929170000000045,
+        "heuristic": 42.687,
+        "localSearch": 0,
+        "cuts": 0,
+        "boundCertificate": 19.300209,
+        "branchAndBound": 0,
+        "nodeLpWorkerSeconds": 0
+      }
+    },
+    "speedup": 1.3050397120264778
+  },
+  {
+    "runtime": "wasm",
+    "case": "large",
+    "config": true,
+    "objective": 4028.4,
+    "samplesMs": {
+      "before": [
+        148.584458,
+        148.061833,
+        150.240417,
+        148.328542,
+        150.078291,
+        148.458666,
+        147.514708
+      ],
+      "after": [
+        54.695791,
+        55.085457999999996,
+        55.624207999999996,
+        55.688084,
+        55.77258300000001,
+        55.179333,
+        55.248458
+      ]
+    },
+    "medianMs": {
+      "before": 148.458666,
+      "after": 55.248458
+    },
+    "medianPhaseMs": {
+      "before": {
+        "presolve": 21.483000000000004,
+        "heuristic": 1.1140420000000026,
+        "localSearch": 119.84999999999998,
+        "cuts": 0,
+        "boundCertificate": 2.770707999999997,
+        "branchAndBound": 0,
+        "nodeLpWorkerSeconds": 0
+      },
+      "after": {
+        "presolve": 21.531625000000002,
+        "heuristic": 1.1164999999999994,
+        "localSearch": 26.618624000000008,
+        "cuts": 0,
+        "boundCertificate": 2.8839170000000065,
+        "branchAndBound": 0,
+        "nodeLpWorkerSeconds": 0
+      }
+    },
+    "speedup": 2.687109674626575
+  },
+  {
+    "runtime": "wasm",
+    "case": "large",
+    "config": false,
+    "objective": 4028.4,
+    "samplesMs": {
+      "before": [
+        148.360917,
+        144.633834,
+        143.733,
+        145.02979200000001,
+        143.382833,
+        146.707583,
+        146.66625
+      ],
+      "after": [
+        56.536542000000004,
+        53.79724999999999,
+        53.41116600000001,
+        53.400375,
+        53.707042,
+        53.787875,
+        53.12862500000001
+      ]
+    },
+    "medianMs": {
+      "before": 145.02979200000001,
+      "after": 53.707042
+    },
+    "medianPhaseMs": {
+      "before": {
+        "presolve": 21.655083,
+        "heuristic": 117.70325,
+        "localSearch": 0,
+        "cuts": 0,
+        "boundCertificate": 1.4012079999999871,
+        "branchAndBound": 0,
+        "nodeLpWorkerSeconds": 0
+      },
+      "after": {
+        "presolve": 21.317625000000003,
+        "heuristic": 26.441624999999988,
+        "localSearch": 0,
+        "cuts": 0,
+        "boundCertificate": 1.4478750000000011,
+        "branchAndBound": 0,
+        "nodeLpWorkerSeconds": 0
+      }
+    },
+    "speedup": 2.700386887812589
+  },
+  {
+    "runtime": "native",
+    "case": "small",
+    "config": 1,
+    "objective": 314.9,
+    "samplesMs": {
+      "before": [
+        0.434791,
+        0.07087500000000001,
+        0.055708,
+        0.062875,
+        0.064417,
+        0.058582999999999996,
+        0.06225000000000001
+      ],
+      "after": [
+        0.06025,
+        0.059417,
+        0.063291,
+        0.059708,
+        0.050334000000000004,
+        0.063541,
+        0.06191599999999999
+      ]
+    },
+    "medianMs": {
+      "before": 0.062875,
+      "after": 0.06025
+    },
+    "medianPhaseMs": {
+      "before": {
+        "boundCertificate": 0.0057079999999999935,
+        "branchAndBound": 0.0,
+        "cuts": 0.0,
+        "heuristic": 0.043458000000000004,
+        "localSearch": 0.0,
+        "nodeLpWorkerSeconds": 0.0,
+        "presolve": 0.010042
+      },
+      "after": {
+        "boundCertificate": 0.004708000000000003,
+        "branchAndBound": 0.0,
+        "cuts": 0.0,
+        "heuristic": 0.042041999999999996,
+        "localSearch": 0.0,
+        "nodeLpWorkerSeconds": 0.0,
+        "presolve": 0.009042
+      }
+    },
+    "speedup": 1.0435684647302905
+  },
+  {
+    "runtime": "native",
+    "case": "small",
+    "config": 8,
+    "objective": 314.9,
+    "samplesMs": {
+      "before": [
+        0.06224999999999999,
+        0.072625,
+        0.053583,
+        0.057999999999999996,
+        0.06295899999999999,
+        0.07466600000000001,
+        0.058625000000000003
+      ],
+      "after": [
+        0.06116699999999999,
+        0.054875,
+        0.057792,
+        0.057957999999999996,
+        0.056333,
+        0.067375,
+        0.056666999999999995
+      ]
+    },
+    "medianMs": {
+      "before": 0.06224999999999999,
+      "after": 0.057792
+    },
+    "medianPhaseMs": {
+      "before": {
+        "boundCertificate": 0.0060830000000000025,
+        "branchAndBound": 0.0,
+        "cuts": 0.0,
+        "heuristic": 0.040458,
+        "localSearch": 0.0,
+        "nodeLpWorkerSeconds": 0.0,
+        "presolve": 0.009541000000000001
+      },
+      "after": {
+        "boundCertificate": 0.004666999999999994,
+        "branchAndBound": 0.0,
+        "cuts": 0.0,
+        "heuristic": 0.03983299999999999,
+        "localSearch": 0.0,
+        "nodeLpWorkerSeconds": 0.0,
+        "presolve": 0.009042000000000001
+      }
+    },
+    "speedup": 1.0771387043189367
+  },
+  {
+    "runtime": "native",
+    "case": "medium",
+    "config": 1,
+    "objective": 3096.8,
+    "samplesMs": {
+      "before": [
+        28.908417,
+        27.843959,
+        28.54625,
+        28.256041,
+        28.485375,
+        29.776500000000002,
+        28.572166
+      ],
+      "after": [
+        12.71675,
+        12.603207999999999,
+        12.566416,
+        12.560458,
+        12.769666,
+        12.908167,
+        12.470792
+      ]
+    },
+    "medianMs": {
+      "before": 28.54625,
+      "after": 12.603207999999999
+    },
+    "medianPhaseMs": {
+      "before": {
+        "boundCertificate": 10.0015,
+        "branchAndBound": 0.0,
+        "cuts": 0.0,
+        "heuristic": 18.100667,
+        "localSearch": 0.0,
+        "nodeLpWorkerSeconds": 0.0,
+        "presolve": 0.347458
+      },
+      "after": {
+        "boundCertificate": 3.2498330000000006,
+        "branchAndBound": 0.0,
+        "cuts": 0.0,
+        "heuristic": 9.084042,
+        "localSearch": 0.0,
+        "nodeLpWorkerSeconds": 0.0,
+        "presolve": 0.346541
+      }
+    },
+    "speedup": 2.2649987209605684
+  },
+  {
+    "runtime": "native",
+    "case": "medium",
+    "config": 8,
+    "objective": 3096.8,
+    "samplesMs": {
+      "before": [
+        28.507375,
+        28.225083,
+        28.461083,
+        28.338542,
+        28.595125000000003,
+        28.295665999999997,
+        28.290041
+      ],
+      "after": [
+        12.736209,
+        12.935417000000001,
+        12.9295,
+        12.856291,
+        13.058709,
+        12.935167,
+        12.982667000000001
+      ]
+    },
+    "medianMs": {
+      "before": 28.338542,
+      "after": 12.935167
+    },
+    "medianPhaseMs": {
+      "before": {
+        "boundCertificate": 10.001667,
+        "branchAndBound": 0.0,
+        "cuts": 0.0,
+        "heuristic": 17.932040999999998,
+        "localSearch": 0.0,
+        "nodeLpWorkerSeconds": 0.0,
+        "presolve": 0.349833
+      },
+      "after": {
+        "boundCertificate": 3.2435,
+        "branchAndBound": 0.0,
+        "cuts": 0.0,
+        "heuristic": 9.322875,
+        "localSearch": 0.0,
+        "nodeLpWorkerSeconds": 0.0,
+        "presolve": 0.345291
+      }
+    },
+    "speedup": 2.190813771480492
+  },
+  {
+    "runtime": "native",
+    "case": "large",
+    "config": 1,
+    "objective": 4028.4,
+    "samplesMs": {
+      "before": [
+        63.97841699999999,
+        65.196042,
+        64.153583,
+        62.468458,
+        64.74266699999998,
+        64.87925,
+        64.33500000000001
+      ],
+      "after": [
+        15.615,
+        15.390792000000001,
+        15.381874999999999,
+        15.22475,
+        15.615125,
+        15.241959,
+        15.745709
+      ]
+    },
+    "medianMs": {
+      "before": 64.33500000000001,
+      "after": 15.390792000000001
+    },
+    "medianPhaseMs": {
+      "before": {
+        "boundCertificate": 0.8361669999999988,
+        "branchAndBound": 0.0,
+        "cuts": 0.0,
+        "heuristic": 56.29191700000001,
+        "localSearch": 0.0,
+        "nodeLpWorkerSeconds": 0.0,
+        "presolve": 6.846125
+      },
+      "after": {
+        "boundCertificate": 0.7985419999999993,
+        "branchAndBound": 0.0,
+        "cuts": 0.0,
+        "heuristic": 7.526375,
+        "localSearch": 0.0,
+        "nodeLpWorkerSeconds": 0.0,
+        "presolve": 6.767042
+      }
+    },
+    "speedup": 4.1800967747468745
+  },
+  {
+    "runtime": "native",
+    "case": "large",
+    "config": 8,
+    "objective": 4028.4,
+    "samplesMs": {
+      "before": [
+        65.023459,
+        65.423375,
+        65.183917,
+        65.141041,
+        63.812583000000004,
+        63.926708,
+        66.008625
+      ],
+      "after": [
+        15.502917,
+        15.750416999999999,
+        15.753625,
+        15.602999999999998,
+        15.097625,
+        15.815584000000001,
+        15.652
+      ]
+    },
+    "medianMs": {
+      "before": 65.141041,
+      "after": 15.652
+    },
+    "medianPhaseMs": {
+      "before": {
+        "boundCertificate": 0.9011250000000026,
+        "branchAndBound": 0.0,
+        "cuts": 0.0,
+        "heuristic": 56.99699999999999,
+        "localSearch": 0.0,
+        "nodeLpWorkerSeconds": 0.0,
+        "presolve": 6.912334
+      },
+      "after": {
+        "boundCertificate": 0.8141669999999993,
+        "branchAndBound": 0.0,
+        "cuts": 0.0,
+        "heuristic": 7.674874999999998,
+        "localSearch": 0.0,
+        "nodeLpWorkerSeconds": 0.0,
+        "presolve": 6.774375
+      }
+    },
+    "speedup": 4.161834973166369
+  }
+]

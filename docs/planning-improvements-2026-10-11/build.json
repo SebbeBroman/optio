@@ -1,0 +1,23 @@
+{
+  "nativeSha256": "e94bd1e1dec569fb12d9f8e6f849afc2c6a3268635c144b21987e5f159bb8163",
+  "nativeFeatures": [
+    "parallel"
+  ],
+  "wasm": {
+    "rawBytes": 175965,
+    "brotliBytes": 67222,
+    "sha256": "c1c46f33713c7b4326c730a10feff9cc1a35f0596b7c6ea50c7c8fbaa82608e8"
+  },
+  "rustTestsPassed": 42,
+  "rustTestsIgnored": 2,
+  "wasmRegressionsPassed": 44,
+  "nativeFixturesAttempted": 59,
+  "supportedNativeFixtures": 58,
+  "statuses": {
+    "7": 45,
+    "15": 3,
+    "13": 5,
+    "8": 3,
+    "10": 2
+  }
+}

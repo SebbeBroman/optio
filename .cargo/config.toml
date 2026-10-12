@@ -1,0 +1,24 @@
+# Cargo configuration for the optio workspace.
+#
+# Everything here is scoped to the wasm target triple so native builds
+# (`cargo build --release -p optio-bench`, tests, etc.) are completely
+# unaffected.
+#
+# `simd128` enables WebAssembly SIMD. LLVM then auto-vectorizes the f64/f32
+# loops it already vectorizes on other targets; the arithmetic stays IEEE-754
+# element-wise, so numeric results are unchanged. wasm-bindgen and wasm-opt
+# (>= the pinned versions) both understand the proposal, and every modern
+# browser plus Node (>=16) supports it. On the current code base it also makes
+# the pre-bindgen module ~1 KB smaller. `harness/tools/wasm-size.sh base`
+# builds without SIMD for runtimes that cannot do it.
+#
+# Deliberately NOT set here:
+#   * `-C strip=symbols` shrinks the raw .wasm a little, but it also drops the
+#     `target_features` custom section, which makes wasm-bindgen lose the
+#     multivalue ABI and fall back to a stack-pointer shim: the emitted JS
+#     grows ~2.4 KB and string-return calls get slower. `wasm-opt -Oz` strips
+#     the name section anyway, after which wasm-bindgen has already produced
+#     the good JS, so skipping `strip` here is both smaller in total and
+#     faster at runtime.
+[target.wasm32-unknown-unknown]
+rustflags = ["-C", "target-feature=+simd128"]

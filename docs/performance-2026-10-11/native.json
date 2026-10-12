@@ -1,0 +1,844 @@
+[
+  {
+    "runtime": "native",
+    "mode": "lp",
+    "fixture": "planning-s",
+    "solver": "HiGHS",
+    "ms": 2.022666856646538,
+    "runs": [
+      2.022666856646538,
+      2.049500122666359,
+      1.7846659757196903
+    ],
+    "status": "HighsModelStatus.kOptimal",
+    "objective": 660.0666666666667,
+    "feasible": true,
+    "gap": null
+  },
+  {
+    "runtime": "native",
+    "mode": "lp",
+    "fixture": "planning-s",
+    "solver": "Optio",
+    "ms": 1.0342500000000001,
+    "runs": [
+      0.523667,
+      1.227833,
+      1.0342500000000001
+    ],
+    "status": 7,
+    "objective": 660.0666665530739,
+    "feasible": true,
+    "gap": null
+  },
+  {
+    "runtime": "native",
+    "mode": "lp",
+    "fixture": "planning-s",
+    "solver": "GLPK",
+    "ms": 5.844084080308676,
+    "runs": [
+      4.987499909475446,
+      5.884250160306692,
+      5.844084080308676
+    ],
+    "status": 5,
+    "objective": 660.066666666667,
+    "feasible": true,
+    "gap": null
+  },
+  {
+    "runtime": "native",
+    "mode": "lp",
+    "fixture": "planning-s",
+    "solver": "SCIP",
+    "ms": 6.015916122123599,
+    "runs": [
+      10.190374916419387,
+      6.015916122123599,
+      5.8193751610815525
+    ],
+    "status": "optimal",
+    "objective": 660.0666666666667,
+    "feasible": true,
+    "gap": 0.0
+  },
+  {
+    "runtime": "native",
+    "mode": "lp",
+    "fixture": "planning-faithful",
+    "solver": "HiGHS",
+    "ms": 1.38329085893929,
+    "runs": [
+      1.4111250638961792,
+      1.38329085893929,
+      1.356540946289897
+    ],
+    "status": "HighsModelStatus.kOptimal",
+    "objective": 167.43333333333345,
+    "feasible": true,
+    "gap": null
+  },
+  {
+    "runtime": "native",
+    "mode": "lp",
+    "fixture": "planning-faithful",
+    "solver": "Optio",
+    "ms": 2.2158750000000005,
+    "runs": [
+      2.2158750000000005,
+      2.2079580000000005,
+      2.223334
+    ],
+    "status": 7,
+    "objective": 167.43333333327612,
+    "feasible": false,
+    "gap": null
+  },
+  {
+    "runtime": "native",
+    "mode": "lp",
+    "fixture": "planning-faithful",
+    "solver": "GLPK",
+    "ms": 4.7227919567376375,
+    "runs": [
+      4.868999822065234,
+      4.717916017398238,
+      4.7227919567376375
+    ],
+    "status": 5,
+    "objective": 167.43333333333345,
+    "feasible": true,
+    "gap": null
+  },
+  {
+    "runtime": "native",
+    "mode": "lp",
+    "fixture": "planning-faithful",
+    "solver": "SCIP",
+    "ms": 2.6752499397844076,
+    "runs": [
+      3.0705828685313463,
+      2.6752499397844076,
+      2.5531670544296503
+    ],
+    "status": "optimal",
+    "objective": 167.43333333333334,
+    "feasible": true,
+    "gap": 0.0
+  },
+  {
+    "runtime": "native",
+    "mode": "lp",
+    "fixture": "planning-tight",
+    "solver": "HiGHS",
+    "ms": 47.39787499420345,
+    "runs": [
+      47.73458302952349,
+      47.39787499420345,
+      46.996249817311764
+    ],
+    "status": "HighsModelStatus.kOptimal",
+    "objective": 4686.87,
+    "feasible": true,
+    "gap": null
+  },
+  {
+    "runtime": "native",
+    "mode": "lp",
+    "fixture": "planning-tight",
+    "solver": "Optio",
+    "ms": 38.678667,
+    "runs": [
+      38.678667,
+      39.007042000000006,
+      38.578209
+    ],
+    "status": 7,
+    "objective": 4686.869999990385,
+    "feasible": true,
+    "gap": null
+  },
+  {
+    "runtime": "native",
+    "mode": "lp",
+    "fixture": "planning-tight",
+    "solver": "GLPK",
+    "ms": 195.19858295097947,
+    "runs": [
+      195.19858295097947,
+      194.7399580385536,
+      197.2132499795407
+    ],
+    "status": 5,
+    "objective": 4686.869999999998,
+    "feasible": true,
+    "gap": null
+  },
+  {
+    "runtime": "native",
+    "mode": "lp",
+    "fixture": "planning-tight",
+    "solver": "SCIP",
+    "ms": 35.361082991585135,
+    "runs": [
+      37.015417125076056,
+      35.361082991585135,
+      35.216334043070674
+    ],
+    "status": "optimal",
+    "objective": 4686.870000000001,
+    "feasible": true,
+    "gap": 0.0
+  },
+  {
+    "runtime": "native",
+    "mode": "lp",
+    "fixture": "planning-m",
+    "solver": "HiGHS",
+    "ms": 30.52191692404449,
+    "runs": [
+      30.71554098278284,
+      30.52191692404449,
+      30.453708954155445
+    ],
+    "status": "HighsModelStatus.kOptimal",
+    "objective": 4294.63,
+    "feasible": true,
+    "gap": null
+  },
+  {
+    "runtime": "native",
+    "mode": "lp",
+    "fixture": "planning-m",
+    "solver": "Optio",
+    "ms": 37.473958,
+    "runs": [
+      37.473958,
+      37.60345900000001,
+      37.325042
+    ],
+    "status": 7,
+    "objective": 4294.629999974663,
+    "feasible": true,
+    "gap": null
+  },
+  {
+    "runtime": "native",
+    "mode": "lp",
+    "fixture": "planning-m",
+    "solver": "GLPK",
+    "ms": 225.90533387847245,
+    "runs": [
+      227.67587495036423,
+      225.90533387847245,
+      224.58787495270371
+    ],
+    "status": 5,
+    "objective": 4294.629999999998,
+    "feasible": true,
+    "gap": null
+  },
+  {
+    "runtime": "native",
+    "mode": "lp",
+    "fixture": "planning-m",
+    "solver": "SCIP",
+    "ms": 35.80491594038904,
+    "runs": [
+      37.88608405739069,
+      35.80491594038904,
+      35.69037513807416
+    ],
+    "status": "optimal",
+    "objective": 4294.630000000001,
+    "feasible": true,
+    "gap": 0.0
+  },
+  {
+    "runtime": "native",
+    "mode": "lp",
+    "fixture": "planning-l",
+    "solver": "HiGHS",
+    "ms": 394.8475830256939,
+    "runs": [
+      397.22454105503857,
+      394.8475830256939,
+      392.42687495425344
+    ],
+    "status": "HighsModelStatus.kOptimal",
+    "objective": 9064.740000000002,
+    "feasible": true,
+    "gap": null
+  },
+  {
+    "runtime": "native",
+    "mode": "lp",
+    "fixture": "planning-l",
+    "solver": "Optio",
+    "ms": 209.487958,
+    "runs": [
+      213.739375,
+      209.487958,
+      209.20820899999998
+    ],
+    "status": 7,
+    "objective": 9064.73999998306,
+    "feasible": false,
+    "gap": null
+  },
+  {
+    "runtime": "native",
+    "mode": "lp",
+    "fixture": "planning-l",
+    "solver": "GLPK",
+    "ms": 954.9363330006599,
+    "runs": [
+      955.1202079746872,
+      954.9363330006599,
+      953.5812910180539
+    ],
+    "status": 5,
+    "objective": 9064.74,
+    "feasible": true,
+    "gap": null
+  },
+  {
+    "runtime": "native",
+    "mode": "lp",
+    "fixture": "planning-l",
+    "solver": "SCIP",
+    "ms": 190.56820892728865,
+    "runs": [
+      208.98058312013745,
+      189.47037495672703,
+      190.56820892728865
+    ],
+    "status": "optimal",
+    "objective": 9064.740000000002,
+    "feasible": true,
+    "gap": 0.0
+  },
+  {
+    "runtime": "native",
+    "mode": "mip",
+    "fixture": "planning-s",
+    "solver": "HiGHS",
+    "ms": 5000.525958137587,
+    "runs": [
+      5000.525958137587
+    ],
+    "status": "HighsModelStatus.kTimeLimit",
+    "objective": 711.44,
+    "feasible": true,
+    "gap": 0.07221035271186996
+  },
+  {
+    "runtime": "native",
+    "mode": "mip",
+    "fixture": "planning-s",
+    "solver": "Optio",
+    "ms": 5002.0726669999995,
+    "runs": [
+      5002.0726669999995
+    ],
+    "status": 13,
+    "objective": 692.7900000000002,
+    "feasible": true,
+    "gap": null
+  },
+  {
+    "runtime": "native",
+    "mode": "mip",
+    "fixture": "planning-s",
+    "solver": "GLPK",
+    "ms": 5002.435625065118,
+    "runs": [
+      5002.435625065118
+    ],
+    "status": 2,
+    "objective": 728.3199999999995,
+    "feasible": true,
+    "gap": null
+  },
+  {
+    "runtime": "native",
+    "mode": "mip",
+    "fixture": "planning-s",
+    "solver": "SCIP",
+    "ms": 5000.1613749191165,
+    "runs": [
+      5000.1613749191165
+    ],
+    "status": "timelimit",
+    "objective": 722.210000000002,
+    "feasible": true,
+    "gap": 0.09414705585294686
+  },
+  {
+    "runtime": "native",
+    "mode": "mip-1s",
+    "fixture": "planning-s",
+    "solver": "Optio",
+    "ms": 1001.2214580000001,
+    "objective": 692.7900000000002,
+    "feasible": true,
+    "status": 13
+  },
+  {
+    "runtime": "native",
+    "mode": "mip",
+    "fixture": "planning-faithful",
+    "solver": "HiGHS",
+    "ms": 5001.012417022139,
+    "runs": [
+      5001.012417022139
+    ],
+    "status": "HighsModelStatus.kTimeLimit",
+    "objective": 258.2600000000782,
+    "feasible": true,
+    "gap": 0.3494377228965619
+  },
+  {
+    "runtime": "native",
+    "mode": "mip",
+    "fixture": "planning-faithful",
+    "solver": "Optio",
+    "ms": 5000.335083000001,
+    "runs": [
+      5000.335083000001
+    ],
+    "status": 13,
+    "objective": 258.2600000000001,
+    "feasible": true,
+    "gap": null
+  },
+  {
+    "runtime": "native",
+    "mode": "mip",
+    "fixture": "planning-faithful",
+    "solver": "GLPK",
+    "ms": 5002.9299589805305,
+    "runs": [
+      5002.9299589805305
+    ],
+    "status": 2,
+    "objective": 258.2600000000001,
+    "feasible": true,
+    "gap": null
+  },
+  {
+    "runtime": "native",
+    "mode": "mip",
+    "fixture": "planning-faithful",
+    "solver": "SCIP",
+    "ms": 4869.425083044916,
+    "runs": [
+      4869.425083044916
+    ],
+    "status": "optimal",
+    "objective": 258.26000000000005,
+    "feasible": true,
+    "gap": 0.0
+  },
+  {
+    "runtime": "native",
+    "mode": "mip-1s",
+    "fixture": "planning-faithful",
+    "solver": "Optio",
+    "ms": 1001.0818339999998,
+    "objective": 259.25999999999976,
+    "feasible": true,
+    "status": 13
+  },
+  {
+    "runtime": "native",
+    "mode": "mip",
+    "fixture": "planning-tight",
+    "solver": "HiGHS",
+    "ms": 5056.439125211909,
+    "runs": [
+      5056.439125211909
+    ],
+    "status": "HighsModelStatus.kTimeLimit",
+    "objective": 7468.650000000009,
+    "feasible": true,
+    "gap": 0.3724608865051437
+  },
+  {
+    "runtime": "native",
+    "mode": "mip",
+    "fixture": "planning-tight",
+    "solver": "Optio",
+    "ms": 5030.411875000001,
+    "runs": [
+      5030.411875000001
+    ],
+    "status": 13,
+    "objective": 5044.72,
+    "feasible": true,
+    "gap": null
+  },
+  {
+    "runtime": "native",
+    "mode": "mip",
+    "fixture": "planning-tight",
+    "solver": "GLPK",
+    "ms": 5168.417458888143,
+    "runs": [
+      5168.417458888143
+    ],
+    "status": 1,
+    "objective": 0.0,
+    "feasible": false,
+    "gap": null
+  },
+  {
+    "runtime": "native",
+    "mode": "mip",
+    "fixture": "planning-tight",
+    "solver": "SCIP",
+    "ms": 5000.516458181664,
+    "runs": [
+      5000.516458181664
+    ],
+    "status": "timelimit",
+    "objective": 5791.64,
+    "feasible": true,
+    "gap": 0.2357159468899218
+  },
+  {
+    "runtime": "native",
+    "mode": "mip-1s",
+    "fixture": "planning-tight",
+    "solver": "Optio",
+    "ms": 1005.559708,
+    "objective": 5278.000000000001,
+    "feasible": true,
+    "status": 13
+  },
+  {
+    "runtime": "native",
+    "mode": "mip",
+    "fixture": "planning-m",
+    "solver": "HiGHS",
+    "ms": 5009.827999863774,
+    "runs": [
+      5009.827999863774
+    ],
+    "status": "HighsModelStatus.kTimeLimit",
+    "objective": 5526.199999999993,
+    "feasible": true,
+    "gap": 0.22286019326119086
+  },
+  {
+    "runtime": "native",
+    "mode": "mip",
+    "fixture": "planning-m",
+    "solver": "Optio",
+    "ms": 5005.316709000001,
+    "runs": [
+      5005.316709000001
+    ],
+    "status": 13,
+    "objective": 4435.530000000002,
+    "feasible": true,
+    "gap": null
+  },
+  {
+    "runtime": "native",
+    "mode": "mip",
+    "fixture": "planning-m",
+    "solver": "GLPK",
+    "ms": 5175.179792102426,
+    "runs": [
+      5175.179792102426
+    ],
+    "status": 1,
+    "objective": 0.0,
+    "feasible": false,
+    "gap": null
+  },
+  {
+    "runtime": "native",
+    "mode": "mip",
+    "fixture": "planning-m",
+    "solver": "SCIP",
+    "ms": 5000.835167011246,
+    "runs": [
+      5000.835167011246
+    ],
+    "status": "timelimit",
+    "objective": 6367.3099999999995,
+    "feasible": true,
+    "gap": 0.48262132011371983
+  },
+  {
+    "runtime": "native",
+    "mode": "mip-1s",
+    "fixture": "planning-m",
+    "solver": "Optio",
+    "ms": 1011.9129170000001,
+    "objective": 4435.530000000002,
+    "feasible": true,
+    "status": 13
+  },
+  {
+    "runtime": "native",
+    "mode": "mip",
+    "fixture": "planning-l",
+    "solver": "HiGHS",
+    "ms": 5023.293291917071,
+    "runs": [
+      5023.293291917071
+    ],
+    "status": "HighsModelStatus.kTimeLimit",
+    "objective": 11048.21999999997,
+    "feasible": true,
+    "gap": 0.1795293721522517
+  },
+  {
+    "runtime": "native",
+    "mode": "mip",
+    "fixture": "planning-l",
+    "solver": "Optio",
+    "ms": 5016.422334,
+    "runs": [
+      5016.422334
+    ],
+    "status": 13,
+    "objective": 10210.020000000002,
+    "feasible": true,
+    "gap": null
+  },
+  {
+    "runtime": "native",
+    "mode": "mip",
+    "fixture": "planning-l",
+    "solver": "GLPK",
+    "ms": 6136.439166031778,
+    "runs": [
+      6136.439166031778
+    ],
+    "status": 1,
+    "objective": 0.0,
+    "feasible": false,
+    "gap": null
+  },
+  {
+    "runtime": "native",
+    "mode": "mip",
+    "fixture": "planning-l",
+    "solver": "SCIP",
+    "ms": 5002.630667062476,
+    "runs": [
+      5002.630667062476
+    ],
+    "status": "timelimit",
+    "objective": 11178.070000000002,
+    "feasible": true,
+    "gap": 0.23313740934654442
+  },
+  {
+    "runtime": "native",
+    "mode": "mip-1s",
+    "fixture": "planning-l",
+    "solver": "Optio",
+    "ms": 1019.149083,
+    "objective": 10210.020000000002,
+    "feasible": true,
+    "status": 13
+  },
+  {
+    "runtime": "native",
+    "mode": "mip",
+    "fixture": "lp/sudoku-easy",
+    "solver": "HiGHS",
+    "ms": 1.1188751086592674,
+    "runs": [
+      1.1449588928371668,
+      1.1188751086592674,
+      1.106042182072997
+    ],
+    "status": "HighsModelStatus.kOptimal",
+    "objective": 0.0,
+    "feasible": true,
+    "gap": 0.0
+  },
+  {
+    "runtime": "native",
+    "mode": "mip",
+    "fixture": "lp/sudoku-easy",
+    "solver": "Optio",
+    "ms": 51.035000000000004,
+    "runs": [
+      51.035000000000004,
+      51.299041,
+      50.995708
+    ],
+    "status": 7,
+    "objective": 0.0,
+    "feasible": true,
+    "gap": null
+  },
+  {
+    "runtime": "native",
+    "mode": "mip",
+    "fixture": "lp/sudoku-easy",
+    "solver": "GLPK",
+    "ms": 0.5143338348716497,
+    "runs": [
+      0.7694161031395197,
+      0.5143338348716497,
+      0.5028750747442245
+    ],
+    "status": 5,
+    "objective": 0.0,
+    "feasible": true,
+    "gap": null
+  },
+  {
+    "runtime": "native",
+    "mode": "mip",
+    "fixture": "lp/sudoku-easy",
+    "solver": "SCIP",
+    "ms": 1.6635421197861433,
+    "runs": [
+      1.9172090105712414,
+      1.6635421197861433,
+      1.586084021255374
+    ],
+    "status": "optimal",
+    "objective": 0.0,
+    "feasible": true,
+    "gap": 0.0
+  },
+  {
+    "runtime": "native",
+    "mode": "mip",
+    "fixture": "lp/sudoku-hard",
+    "solver": "HiGHS",
+    "ms": 1.692082965746522,
+    "runs": [
+      1.708625117316842,
+      1.6901250928640366,
+      1.692082965746522
+    ],
+    "status": "HighsModelStatus.kOptimal",
+    "objective": 0.0,
+    "feasible": true,
+    "gap": 0.0
+  },
+  {
+    "runtime": "native",
+    "mode": "mip",
+    "fixture": "lp/sudoku-hard",
+    "solver": "Optio",
+    "ms": 80.6485,
+    "runs": [
+      81.29091600000001,
+      80.6485,
+      80.63316699999999
+    ],
+    "status": 7,
+    "objective": 0.0,
+    "feasible": true,
+    "gap": null
+  },
+  {
+    "runtime": "native",
+    "mode": "mip",
+    "fixture": "lp/sudoku-hard",
+    "solver": "GLPK",
+    "ms": 0.6286250427365303,
+    "runs": [
+      0.7101250812411308,
+      0.6223330274224281,
+      0.6286250427365303
+    ],
+    "status": 5,
+    "objective": 0.0,
+    "feasible": true,
+    "gap": null
+  },
+  {
+    "runtime": "native",
+    "mode": "mip",
+    "fixture": "lp/sudoku-hard",
+    "solver": "SCIP",
+    "ms": 2.0121249835938215,
+    "runs": [
+      2.0121249835938215,
+      1.7559169791638851,
+      2.0479580853134394
+    ],
+    "status": "optimal",
+    "objective": 0.0,
+    "feasible": true,
+    "gap": 0.0
+  },
+  {
+    "runtime": "native",
+    "mode": "mip",
+    "fixture": "lp/tsp-12.mip",
+    "solver": "HiGHS",
+    "ms": 128.3858751412481,
+    "runs": [
+      126.80004211142659,
+      128.44904186204076,
+      128.3858751412481
+    ],
+    "status": "HighsModelStatus.kOptimal",
+    "objective": 279.0,
+    "feasible": true,
+    "gap": 0.0
+  },
+  {
+    "runtime": "native",
+    "mode": "mip",
+    "fixture": "lp/tsp-12.mip",
+    "solver": "Optio",
+    "ms": 19.373666,
+    "runs": [
+      19.305833,
+      19.434957999999998,
+      19.373666
+    ],
+    "status": 7,
+    "objective": 279.0,
+    "feasible": true,
+    "gap": null
+  },
+  {
+    "runtime": "native",
+    "mode": "mip",
+    "fixture": "lp/tsp-12.mip",
+    "solver": "GLPK",
+    "ms": 27.968249982222915,
+    "runs": [
+      28.769416036084294,
+      27.793292189016938,
+      27.968249982222915
+    ],
+    "status": 5,
+    "objective": 279.0,
+    "feasible": true,
+    "gap": null
+  },
+  {
+    "runtime": "native",
+    "mode": "mip",
+    "fixture": "lp/tsp-12.mip",
+    "solver": "SCIP",
+    "ms": 85.94483300112188,
+    "runs": [
+      91.04404202662408,
+      85.94483300112188,
+      85.71616606786847
+    ],
+    "status": "optimal",
+    "objective": 279.0,
+    "feasible": true,
+    "gap": 0.0
+  }
+]

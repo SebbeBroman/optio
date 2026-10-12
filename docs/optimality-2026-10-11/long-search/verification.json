@@ -1,0 +1,96 @@
+[
+  {
+    "file": "harness/fixtures/planning-export.lp",
+    "sha256": "9e7fa11bad5b91213f2051b9f06bed7109ef336630df5a2f1b1fb88f82ceae49",
+    "columns": 5602,
+    "check": {
+      "feasible": true,
+      "objective": 536939.96,
+      "maxRowViolation": 0.0,
+      "maxBoundViolation": 0.0,
+      "maxIntegralityViolation": 0.0
+    },
+    "fsumObjective": 536939.96,
+    "finalSolverStatus": "timelimit",
+    "finalApiDualBound": 536180.3600000001,
+    "proofStatus": "open"
+  },
+  {
+    "file": "harness/fixtures/planning-s.lp",
+    "sha256": "d743d6445f9c77ce42f3deb93344c31dd4f5a79b7d23273fb5da078d16f3b085",
+    "columns": 302,
+    "check": {
+      "feasible": true,
+      "objective": 661.14,
+      "maxRowViolation": 0.0,
+      "maxBoundViolation": 0.0,
+      "maxIntegralityViolation": 0.0
+    },
+    "fsumObjective": 661.14,
+    "finalSolverStatus": "timelimit",
+    "finalApiDualBound": 660.7090757628889,
+    "proofStatus": "open",
+    "seedCheck": {
+      "feasible": true,
+      "objective": 661.1400009997709,
+      "maxRowViolation": 0.0,
+      "maxBoundViolation": 0.0,
+      "maxIntegralityViolation": 0.0
+    }
+  },
+  {
+    "file": "harness/fixtures/planning-m.lp",
+    "sha256": "dd02d12a5f36d3c39d3800ff671d7e2049810529a73e7280282fbc66ffbe8920",
+    "columns": 3051,
+    "check": {
+      "feasible": true,
+      "objective": 4399.9,
+      "maxRowViolation": 0.0,
+      "maxBoundViolation": 0.0,
+      "maxIntegralityViolation": 0.0
+    },
+    "fsumObjective": 4399.9,
+    "finalSolverStatus": "timelimit",
+    "finalApiDualBound": 4294.630000000006,
+    "proofStatus": "open"
+  },
+  {
+    "file": "harness/fixtures/planning-l.lp",
+    "sha256": "c5dead87e2a37c1f5ed7ae3f47f5fbc7426a6c34f20d58cc84c46d9261e532ea",
+    "columns": 10458,
+    "check": {
+      "feasible": true,
+      "objective": 10387.95,
+      "maxRowViolation": 9.094947017729282e-13,
+      "maxBoundViolation": 9.094947017729282e-13,
+      "maxIntegralityViolation": 1.1102230246251565e-16
+    },
+    "fsumObjective": 10387.95,
+    "finalSolverStatus": "timelimit",
+    "finalApiDualBound": 9064.740000000003,
+    "proofStatus": "open"
+  },
+  {
+    "file": "harness/fixtures/planning-tight.lp",
+    "sha256": "f6ca4384c9af45ca33c03073d7d2193d57fe6fbc30544861f8ad9fdfac8164bf",
+    "columns": 3015,
+    "check": {
+      "feasible": true,
+      "objective": 4750.39,
+      "maxRowViolation": 0.0,
+      "maxBoundViolation": 0.0,
+      "maxIntegralityViolation": 0.0
+    },
+    "fsumObjective": 4750.39,
+    "finalSolverStatus": "timelimit",
+    "finalApiDualBound": 4686.870000000002,
+    "proofStatus": "open",
+    "seedCheck": {
+      "feasible": true,
+      "objective": 4800.620000000001,
+      "maxRowViolation": 0.0,
+      "maxBoundViolation": 0.0,
+      "maxIntegralityViolation": 0.0
+    }
+  }
+]

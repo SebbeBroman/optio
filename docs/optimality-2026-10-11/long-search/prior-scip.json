@@ -1,0 +1,92 @@
+[
+  {
+    "file": "harness/fixtures/planning-export.lp",
+    "status": "timelimit",
+    "objective": 537555.2,
+    "dualBound": 536124.2000000002,
+    "gap": 0.0026691576317572807,
+    "seconds": 119.31770299980417,
+    "threads": 8,
+    "mode": "solveConcurrent",
+    "seeded": false,
+    "check": {
+      "feasible": true,
+      "objective": 537555.2,
+      "maxRowViolation": 0.0,
+      "maxBoundViolation": 0.0,
+      "maxIntegralityViolation": 0.0
+    }
+  },
+  {
+    "file": "harness/fixtures/planning-l.lp",
+    "status": "timelimit",
+    "objective": 10031.31,
+    "dualBound": 9064.740000000087,
+    "gap": 0.10662964409347682,
+    "seconds": 119.59661208302714,
+    "threads": 8,
+    "mode": "solveConcurrent",
+    "seeded": true,
+    "check": {
+      "feasible": true,
+      "objective": 10031.31,
+      "maxRowViolation": 0.0,
+      "maxBoundViolation": 0.0,
+      "maxIntegralityViolation": 0.0
+    }
+  },
+  {
+    "file": "harness/fixtures/planning-m.lp",
+    "status": "timelimit",
+    "objective": 4377.47,
+    "dualBound": 4294.630000000013,
+    "gap": 0.019289205356453797,
+    "seconds": 119.0079624580685,
+    "threads": 8,
+    "mode": "solveConcurrent",
+    "seeded": true,
+    "check": {
+      "feasible": true,
+      "objective": 4377.47,
+      "maxRowViolation": 0.0,
+      "maxBoundViolation": 0.0,
+      "maxIntegralityViolation": 0.0
+    }
+  },
+  {
+    "file": "harness/fixtures/planning-s.lp",
+    "status": "timelimit",
+    "objective": 665.36,
+    "dualBound": 660.9209999994937,
+    "gap": 0.0067163851663205225,
+    "seconds": 118.92307700007223,
+    "threads": 8,
+    "mode": "solveConcurrent",
+    "seeded": true,
+    "check": {
+      "feasible": true,
+      "objective": 665.36,
+      "maxRowViolation": 0.0,
+      "maxBoundViolation": 0.0,
+      "maxIntegralityViolation": 0.0
+    }
+  },
+  {
+    "file": "harness/fixtures/planning-tight.lp",
+    "status": "timelimit",
+    "objective": 4802.040000000002,
+    "dualBound": 4686.870000000074,
+    "gap": 0.024572902598093485,
+    "seconds": 119.06329183280468,
+    "threads": 8,
+    "mode": "solveConcurrent",
+    "seeded": true,
+    "check": {
+      "feasible": true,
+      "objective": 4802.040000000001,
+      "maxRowViolation": 0.0,
+      "maxBoundViolation": 0.0,
+      "maxIntegralityViolation": 0.0
+    }
+  }
+]

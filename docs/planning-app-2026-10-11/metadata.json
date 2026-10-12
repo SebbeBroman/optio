@@ -1,0 +1,8 @@
+{
+  "highsVersion": "1.15.1",
+  "beforeWasmSha256": "c1c46f33713c7b4326c730a10feff9cc1a35f0596b7c6ea50c7c8fbaa82608e8",
+  "afterWasmSha256": "9d1eba3c1e4228d6eecb97ebf12566dfa37fb30fb1f5a777bd0a699d669b68bf",
+  "nativeSha256": "c7e18a7eaa3cda8c5ce5d9258d929274fdbc91ba9e62a144c273d820503a2200",
+  "relativeGap": 0,
+  "absoluteGap": 0
+}

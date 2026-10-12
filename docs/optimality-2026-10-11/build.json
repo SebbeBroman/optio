@@ -1,0 +1,16 @@
+{
+  "baseCommit": "820ad59eed0615f202374087b56dba04fe01ab4b",
+  "rustc": "rustc 1.94.0 (4a4ef493e 2026-03-02)",
+  "hardware": "Apple M1 Pro",
+  "files": {
+    "target/release/optio-bench": "8bc155e4a0b402ffdc6e6f74f065e788d4659f0f6c92f9b909b297279f3636b8",
+    "/tmp/optio-presolve-wasm/optio_wasm_bg.wasm": "7647d5761190ec575ebceb01b718c77413e40f9236809049a6d84426d55acbff"
+  },
+  "workingTree": "Includes pre-existing uncommitted solver changes.",
+  "finalFiles": {
+    "target/release/optio-bench": "e621e396796795b099e28f076b712c18cde543a5d626d1e66cb16723a875dc52",
+    "pkg/optio_wasm_bg.wasm": "c2e2ca520d2dcb483af45f42e4643f3bdb1af7cd5a7f573523380ecac837d915",
+    "pkg-web/optio_wasm_bg.wasm": "c2e2ca520d2dcb483af45f42e4643f3bdb1af7cd5a7f573523380ecac837d915"
+  },
+  "wasmRustc": "rustc 1.96.0-nightly (3102493c7 2026-03-12)"
+}

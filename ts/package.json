@@ -1,0 +1,17 @@
+{
+  "name": "optio-ts",
+  "version": "0.0.1",
+  "private": true,
+  "type": "module",
+  "description": "Data-oriented, single-threaded LP/MIP engine in TypeScript (optio port), tuned for V8/browser",
+  "scripts": {
+    "test": "node --test",
+    "typecheck": "tsc --noEmit",
+    "differential": "node tools/differential.mjs --mode both --count 40",
+    "compare": "node tools/compare.mjs"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.5",
+    "typescript": "^5.6.0"
+  }
+}

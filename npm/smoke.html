@@ -1,0 +1,55 @@
+<!doctype html>
+<meta charset="utf-8" />
+<title>optio browser smoke</title>
+<style>
+  body { font: 14px ui-monospace, monospace; margin: 2rem; }
+  pre { background: #f4f4f4; padding: 1rem; white-space: pre-wrap; }
+  .ok { color: #0a7d24; font-weight: bold; }
+  .fail { color: #b3261e; font-weight: bold; }
+</style>
+<h3>optio — browser smoke (the npm package entry, not the raw glue)</h3>
+<pre id="out">loading…</pre>
+<script type="module">
+  import { init, createSolver, ModelStatus, statusName, version } from './index.js';
+
+  const out = document.getElementById('out');
+  const lines = [];
+  const log = (s) => { lines.push(s); out.textContent = lines.join('\n'); };
+  const fail = (err) => { log(`FAIL ${err}`); out.innerHTML = out.textContent.replace(/^FAIL/m, '<span class="fail">FAIL</span>'); throw err; };
+
+  try {
+    // Auto-detection path: fetch(import.meta.url-based URL) with correct MIME.
+    await init();
+    log(`wasm loaded (optio ${version()})`);
+
+    // High-level solver surface with partial-solution callbacks.
+    const solver = createSolver();
+    const model = solver.createModel();
+    // Weighted binary selection; LP bound is fractional so the incumbent improves in stages.
+    const n = 12;
+    const weights = [7, 6, 5, 5, 4, 4, 3, 3, 2, 2, 1, 1];
+    for (let i = 0; i < n; i++) model.addVar(0, 1), model.changeColIntegrality(i, 1);
+    for (let i = 0; i < n; i++) model.changeColCost(i, -weights[i]);
+    model.addRow(-Infinity, 7.5, { indices: [...Array(n).keys()], values: weights });
+    const incumbents = [];
+    model.run({
+      callbacks: {
+        onProgress: (p) => log(`  progress nodes=${p.nodes} gap=${p.gap.toFixed(3)} incumbent=${p.primalBound}`),
+        onIncumbent: (inc) => incumbents.push(inc.objective),
+      },
+    });
+    const status = model.getModelStatus();
+    if (status !== ModelStatus.Optimal) fail(`status ${status} (${statusName(status)})`);
+    const objective = model.getObjectiveValue();
+    if (incumbents.length < 1) fail('no incumbents reported');
+    if (incumbents.at(-1) !== objective) fail('last incumbent != objective');
+    log(`solved: status=${statusName(status)} objective=${objective} incumbents=${incumbents.join(' → ')}`);
+    model.dispose();
+
+    log('<span class="ok">PASS</span> browser smoke complete');
+    document.title = 'optio smoke PASS';
+  } catch (err) {
+    document.title = 'optio smoke FAIL';
+    fail(err);
+  }
+</script>

@@ -1,0 +1,25 @@
+[package]
+name = "optio-wasm"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+description = "WebAssembly bindings for optio (highs-js-compatible surface)"
+
+[lib]
+crate-type = ["cdylib", "rlib"]
+
+[features]
+# Queue-heavy proof search fragments the small linked free-list allocator.
+# Use the standard allocator by default; --no-default-features keeps the
+# smaller allocator available for measured size-sensitive builds.
+default = ["default-alloc"]
+default-alloc = []
+
+[dependencies]
+optio-core = { path = "../core" }
+wasm-bindgen = { workspace = true }
+js-sys = { workspace = true }
+
+# Optional smaller allocator; benchmark fragmentation before enabling it.
+[target.'cfg(target_arch = "wasm32")'.dependencies]
+lol_alloc = "0.4"

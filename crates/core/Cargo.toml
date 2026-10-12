@@ -1,0 +1,22 @@
+[package]
+name = "optio-core"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+description = "Data-oriented, wasm-first LP/MIP core (inspired by HiGHS)"
+
+[features]
+default = []
+# Native-only parallel exploration (rayon + work-stealing node deques). Always
+# off for wasm32.
+parallel = ["dep:rayon", "dep:crossbeam-deque"]
+# Instrument the simplex hot loop with wall-time counters (OPTIO_LPTIME=1).
+# Off by default so release builds carry no timer overhead.
+profiling = []
+
+[dependencies]
+rayon = { workspace = true, optional = true }
+crossbeam-deque = { workspace = true, optional = true }
+
+[dev-dependencies]
+serde_json = "1"

@@ -1,0 +1,247 @@
+{
+  "fixtures": 61,
+  "solvers": {
+    "baselineNative": {
+      "optimal": 48,
+      "completed": 53,
+      "incumbents": 54,
+      "seconds": 152.878935916,
+      "unresolved": [
+        "harness/fixtures/2122.lp",
+        "harness/fixtures/exceeds_stack.lp",
+        "harness/fixtures/life_goe.mod.lp",
+        "harness/fixtures/planning-faithful.lp",
+        "harness/fixtures/planning-l.lp",
+        "harness/fixtures/planning-m.lp",
+        "harness/fixtures/planning-s.lp",
+        "harness/fixtures/planning-tight.lp"
+      ]
+    },
+    "native": {
+      "optimal": 50,
+      "completed": 55,
+      "incumbents": 55,
+      "seconds": 134.023321583,
+      "unresolved": [
+        "harness/fixtures/life_goe.mod.lp",
+        "harness/fixtures/planning-faithful.lp",
+        "harness/fixtures/planning-l.lp",
+        "harness/fixtures/planning-m.lp",
+        "harness/fixtures/planning-s.lp",
+        "harness/fixtures/planning-tight.lp"
+      ]
+    },
+    "baselineWasm": {
+      "optimal": 48,
+      "completed": 53,
+      "incumbents": 54,
+      "seconds": 170.75965008600002,
+      "unresolved": [
+        "harness/fixtures/2122.lp",
+        "harness/fixtures/exceeds_stack.lp",
+        "harness/fixtures/life_goe.mod.lp",
+        "harness/fixtures/planning-faithful.lp",
+        "harness/fixtures/planning-l.lp",
+        "harness/fixtures/planning-m.lp",
+        "harness/fixtures/planning-s.lp",
+        "harness/fixtures/planning-tight.lp"
+      ]
+    },
+    "wasm": {
+      "optimal": 50,
+      "completed": 55,
+      "incumbents": 55,
+      "seconds": 142.95936633,
+      "unresolved": [
+        "harness/fixtures/life_goe.mod.lp",
+        "harness/fixtures/planning-faithful.lp",
+        "harness/fixtures/planning-l.lp",
+        "harness/fixtures/planning-m.lp",
+        "harness/fixtures/planning-s.lp",
+        "harness/fixtures/planning-tight.lp"
+      ]
+    },
+    "referenceHighsNative": {
+      "optimal": 50,
+      "completed": 55,
+      "incumbents": 58,
+      "seconds": 133.01624671299942,
+      "unresolved": [
+        "harness/fixtures/planning-app-large.lp",
+        "harness/fixtures/planning-export.lp",
+        "harness/fixtures/planning-l.lp",
+        "harness/fixtures/planning-m.lp",
+        "harness/fixtures/planning-s.lp",
+        "harness/fixtures/planning-tight.lp"
+      ]
+    }
+  },
+  "changes": {
+    "native": {
+      "betterObjective": [],
+      "worseObjective": [
+        "harness/fixtures/planning-s.lp"
+      ],
+      "newIncumbent": [
+        "harness/fixtures/2122.lp"
+      ],
+      "lostIncumbent": [],
+      "newProof": [
+        "harness/fixtures/2122.lp",
+        "harness/fixtures/exceeds_stack.lp"
+      ],
+      "lostProof": []
+    },
+    "wasm": {
+      "betterObjective": [],
+      "worseObjective": [],
+      "newIncumbent": [
+        "harness/fixtures/2122.lp"
+      ],
+      "lostIncumbent": [],
+      "newProof": [
+        "harness/fixtures/2122.lp",
+        "harness/fixtures/exceeds_stack.lp"
+      ],
+      "lostProof": []
+    }
+  },
+  "objectiveVsNativeHighs": {
+    "native": {
+      "better": [
+        "harness/fixtures/planning-app-large.lp",
+        "harness/fixtures/planning-export.lp",
+        "harness/fixtures/planning-l.lp",
+        "harness/fixtures/planning-m.lp",
+        "harness/fixtures/planning-tight.lp"
+      ],
+      "worse": [
+        "harness/fixtures/planning-s.lp"
+      ],
+      "equal": [
+        "harness/fixtures/1451.lp",
+        "harness/fixtures/2122.lp",
+        "harness/fixtures/exceeds_stack.lp",
+        "harness/fixtures/fixed-binary.lp",
+        "harness/fixtures/issue-2388.lp",
+        "harness/fixtures/issue-2585.lp",
+        "harness/fixtures/planning-app-medium.lp",
+        "harness/fixtures/planning-app-small.lp",
+        "harness/fixtures/planning-faithful.lp",
+        "harness/fixtures/lp/lp-01.lp",
+        "harness/fixtures/lp/lp-02.lp",
+        "harness/fixtures/lp/lp-03.lp",
+        "harness/fixtures/lp/lp-04.lp",
+        "harness/fixtures/lp/lp-05.lp",
+        "harness/fixtures/lp/lp-06.lp",
+        "harness/fixtures/lp/lp-07.lp",
+        "harness/fixtures/lp/lp-08.lp",
+        "harness/fixtures/lp/lp-09.lp",
+        "harness/fixtures/lp/lp-10.lp",
+        "harness/fixtures/lp/lp-11.lp",
+        "harness/fixtures/lp/lp-12.lp",
+        "harness/fixtures/lp/lp-13.lp",
+        "harness/fixtures/lp/lp-14.lp",
+        "harness/fixtures/lp/lp-15.lp",
+        "harness/fixtures/lp/lp-16.lp",
+        "harness/fixtures/lp/lp-17.lp",
+        "harness/fixtures/lp/lp-18.lp",
+        "harness/fixtures/lp/lp-19.lp",
+        "harness/fixtures/lp/lp-20.lp",
+        "harness/fixtures/lp/mip-01.mip.lp",
+        "harness/fixtures/lp/mip-02.mip.lp",
+        "harness/fixtures/lp/mip-03.mip.lp",
+        "harness/fixtures/lp/mip-04.mip.lp",
+        "harness/fixtures/lp/mip-05.mip.lp",
+        "harness/fixtures/lp/mip-06.mip.lp",
+        "harness/fixtures/lp/mip-07.mip.lp",
+        "harness/fixtures/lp/mip-08.mip.lp",
+        "harness/fixtures/lp/mip-09.mip.lp",
+        "harness/fixtures/lp/mip-10.mip.lp",
+        "harness/fixtures/lp/mip-11.mip.lp",
+        "harness/fixtures/lp/mip-12.mip.lp",
+        "harness/fixtures/lp/mip-13.mip.lp",
+        "harness/fixtures/lp/mip-14.mip.lp",
+        "harness/fixtures/lp/mip-15.mip.lp",
+        "harness/fixtures/lp/sudoku-easy.lp",
+        "harness/fixtures/lp/sudoku-hard.lp",
+        "harness/fixtures/lp/tsp-10.mip.lp",
+        "harness/fixtures/lp/tsp-12.mip.lp",
+        "harness/fixtures/lp/tsp-8.mip.lp"
+      ],
+      "referenceOnlyWitness": [
+        "harness/fixtures/life_goe.mod.lp",
+        "harness/fixtures/lp/lp-23-unbounded.lp",
+        "harness/fixtures/lp/lp-24-unbounded.lp"
+      ]
+    },
+    "wasm": {
+      "better": [
+        "harness/fixtures/planning-app-large.lp",
+        "harness/fixtures/planning-export.lp",
+        "harness/fixtures/planning-l.lp",
+        "harness/fixtures/planning-m.lp",
+        "harness/fixtures/planning-tight.lp"
+      ],
+      "worse": [
+        "harness/fixtures/planning-s.lp"
+      ],
+      "equal": [
+        "harness/fixtures/1451.lp",
+        "harness/fixtures/2122.lp",
+        "harness/fixtures/exceeds_stack.lp",
+        "harness/fixtures/fixed-binary.lp",
+        "harness/fixtures/issue-2388.lp",
+        "harness/fixtures/issue-2585.lp",
+        "harness/fixtures/planning-app-medium.lp",
+        "harness/fixtures/planning-app-small.lp",
+        "harness/fixtures/planning-faithful.lp",
+        "harness/fixtures/lp/lp-01.lp",
+        "harness/fixtures/lp/lp-02.lp",
+        "harness/fixtures/lp/lp-03.lp",
+        "harness/fixtures/lp/lp-04.lp",
+        "harness/fixtures/lp/lp-05.lp",
+        "harness/fixtures/lp/lp-06.lp",
+        "harness/fixtures/lp/lp-07.lp",
+        "harness/fixtures/lp/lp-08.lp",
+        "harness/fixtures/lp/lp-09.lp",
+        "harness/fixtures/lp/lp-10.lp",
+        "harness/fixtures/lp/lp-11.lp",
+        "harness/fixtures/lp/lp-12.lp",
+        "harness/fixtures/lp/lp-13.lp",
+        "harness/fixtures/lp/lp-14.lp",
+        "harness/fixtures/lp/lp-15.lp",
+        "harness/fixtures/lp/lp-16.lp",
+        "harness/fixtures/lp/lp-17.lp",
+        "harness/fixtures/lp/lp-18.lp",
+        "harness/fixtures/lp/lp-19.lp",
+        "harness/fixtures/lp/lp-20.lp",
+        "harness/fixtures/lp/mip-01.mip.lp",
+        "harness/fixtures/lp/mip-02.mip.lp",
+        "harness/fixtures/lp/mip-03.mip.lp",
+        "harness/fixtures/lp/mip-04.mip.lp",
+        "harness/fixtures/lp/mip-05.mip.lp",
+        "harness/fixtures/lp/mip-06.mip.lp",
+        "harness/fixtures/lp/mip-07.mip.lp",
+        "harness/fixtures/lp/mip-08.mip.lp",
+        "harness/fixtures/lp/mip-09.mip.lp",
+        "harness/fixtures/lp/mip-10.mip.lp",
+        "harness/fixtures/lp/mip-11.mip.lp",
+        "harness/fixtures/lp/mip-12.mip.lp",
+        "harness/fixtures/lp/mip-13.mip.lp",
+        "harness/fixtures/lp/mip-14.mip.lp",
+        "harness/fixtures/lp/mip-15.mip.lp",
+        "harness/fixtures/lp/sudoku-easy.lp",
+        "harness/fixtures/lp/sudoku-hard.lp",
+        "harness/fixtures/lp/tsp-10.mip.lp",
+        "harness/fixtures/lp/tsp-12.mip.lp",
+        "harness/fixtures/lp/tsp-8.mip.lp"
+      ],
+      "referenceOnlyWitness": [
+        "harness/fixtures/life_goe.mod.lp",
+        "harness/fixtures/lp/lp-23-unbounded.lp",
+        "harness/fixtures/lp/lp-24-unbounded.lp"
+      ]
+    }
+  }
+}

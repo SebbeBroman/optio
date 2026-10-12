@@ -1,0 +1,190 @@
+{
+  "supportedFixtures": 61,
+  "excluded": [
+    "harness/fixtures/semi-integer.lp"
+  ],
+  "solvers": {
+    "optioNative": {
+      "reportedOptimal": 48,
+      "validatedOptimal": 48,
+      "validatedClassifications": 53,
+      "checkedIncumbents": 54,
+      "contradictions": 0,
+      "totalSolveSeconds": 152.878935916,
+      "open": [
+        "harness/fixtures/2122.lp",
+        "harness/fixtures/exceeds_stack.lp",
+        "harness/fixtures/life_goe.mod.lp",
+        "harness/fixtures/planning-faithful.lp",
+        "harness/fixtures/planning-l.lp",
+        "harness/fixtures/planning-m.lp",
+        "harness/fixtures/planning-s.lp",
+        "harness/fixtures/planning-tight.lp"
+      ],
+      "issues": []
+    },
+    "optioWasm": {
+      "reportedOptimal": 48,
+      "validatedOptimal": 48,
+      "validatedClassifications": 53,
+      "checkedIncumbents": 54,
+      "contradictions": 0,
+      "totalSolveSeconds": 170.75965008600002,
+      "open": [
+        "harness/fixtures/2122.lp",
+        "harness/fixtures/exceeds_stack.lp",
+        "harness/fixtures/life_goe.mod.lp",
+        "harness/fixtures/planning-faithful.lp",
+        "harness/fixtures/planning-l.lp",
+        "harness/fixtures/planning-m.lp",
+        "harness/fixtures/planning-s.lp",
+        "harness/fixtures/planning-tight.lp"
+      ],
+      "issues": []
+    },
+    "highsNative": {
+      "reportedOptimal": 50,
+      "validatedOptimal": 50,
+      "validatedClassifications": 55,
+      "checkedIncumbents": 58,
+      "contradictions": 0,
+      "totalSolveSeconds": 133.01624671299942,
+      "open": [
+        "harness/fixtures/planning-app-large.lp",
+        "harness/fixtures/planning-export.lp",
+        "harness/fixtures/planning-l.lp",
+        "harness/fixtures/planning-m.lp",
+        "harness/fixtures/planning-s.lp",
+        "harness/fixtures/planning-tight.lp"
+      ],
+      "issues": []
+    },
+    "highsWasm": {
+      "reportedOptimal": 53,
+      "validatedOptimal": 46,
+      "validatedClassifications": 51,
+      "checkedIncumbents": 55,
+      "contradictions": 10,
+      "totalSolveSeconds": 7.806286957,
+      "open": [
+        "harness/fixtures/2122.lp",
+        "harness/fixtures/exceeds_stack.lp",
+        "harness/fixtures/life_goe.mod.lp",
+        "harness/fixtures/planning-app-medium.lp",
+        "harness/fixtures/planning-export.lp",
+        "harness/fixtures/planning-faithful.lp",
+        "harness/fixtures/planning-l.lp",
+        "harness/fixtures/planning-m.lp",
+        "harness/fixtures/planning-s.lp",
+        "harness/fixtures/planning-tight.lp"
+      ],
+      "issues": [
+        {
+          "file": "harness/fixtures/2122.lp",
+          "errors": [
+            "infeasible contradicted by checked witness"
+          ]
+        },
+        {
+          "file": "harness/fixtures/exceeds_stack.lp",
+          "errors": [
+            "optimal contradicted by better checked witness",
+            "bound excludes checked witness"
+          ]
+        },
+        {
+          "file": "harness/fixtures/life_goe.mod.lp",
+          "errors": [
+            "infeasible contradicted by checked witness"
+          ]
+        },
+        {
+          "file": "harness/fixtures/planning-app-medium.lp",
+          "errors": [
+            "optimal contradicted by better checked witness",
+            "bound excludes checked witness"
+          ]
+        },
+        {
+          "file": "harness/fixtures/planning-export.lp",
+          "errors": [
+            "infeasible contradicted by checked witness"
+          ]
+        },
+        {
+          "file": "harness/fixtures/planning-faithful.lp",
+          "errors": [
+            "optimal contradicted by better checked witness",
+            "bound excludes checked witness"
+          ]
+        },
+        {
+          "file": "harness/fixtures/planning-l.lp",
+          "errors": [
+            "optimal contradicted by better checked witness",
+            "bound excludes checked witness"
+          ]
+        },
+        {
+          "file": "harness/fixtures/planning-m.lp",
+          "errors": [
+            "optimal contradicted by better checked witness",
+            "bound excludes checked witness"
+          ]
+        },
+        {
+          "file": "harness/fixtures/planning-s.lp",
+          "errors": [
+            "optimal contradicted by better checked witness",
+            "bound excludes checked witness"
+          ]
+        },
+        {
+          "file": "harness/fixtures/planning-tight.lp",
+          "errors": [
+            "optimal contradicted by better checked witness",
+            "bound excludes checked witness"
+          ]
+        }
+      ]
+    }
+  },
+  "pairs": {
+    "optioNative": {
+      "optioBetterObjective": 6,
+      "highsBetterObjective": 0,
+      "equalObjective": 48,
+      "optioOnlyIncumbent": 0,
+      "highsOnlyIncumbent": 4,
+      "neitherIncumbent": 3,
+      "commonClassifications": 51,
+      "optioFaster": 48,
+      "highsFaster": 3,
+      "medianOptioToHighsTimeRatioOnCommonClassifications": 0.12298982700349685
+    },
+    "optioWasm": {
+      "optioBetterObjective": 5,
+      "highsBetterObjective": 1,
+      "equalObjective": 48,
+      "optioOnlyIncumbent": 0,
+      "highsOnlyIncumbent": 4,
+      "neitherIncumbent": 3,
+      "commonClassifications": 51,
+      "optioFaster": 6,
+      "highsFaster": 45,
+      "medianOptioToHighsTimeRatioOnCommonClassifications": 9.901413620399172
+    },
+    "wasmVsWasm": {
+      "optioBetterObjective": 7,
+      "highsBetterObjective": 0,
+      "equalObjective": 46,
+      "optioOnlyIncumbent": 1,
+      "highsOnlyIncumbent": 2,
+      "neitherIncumbent": 5,
+      "commonClassifications": 51,
+      "optioFaster": 50,
+      "highsFaster": 1,
+      "medianOptioToHighsTimeRatioOnCommonClassifications": 0.3056485538516097
+    }
+  }
+}

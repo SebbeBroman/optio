@@ -1,0 +1,678 @@
+[
+  {
+    "name": "lp-01",
+    "status": 7,
+    "objective": -51.250000225,
+    "bound": -51.25000000004789,
+    "ms": 2.3290830000000007,
+    "pass": true,
+    "check": {
+      "feasible": true,
+      "objective": -51.250000225,
+      "maxRowViolation": 1.0000000116860974e-7,
+      "maxBoundViolation": 0,
+      "maxIntegralityViolation": 0,
+      "error": null
+    }
+  },
+  {
+    "name": "lp-02",
+    "status": 7,
+    "objective": -65.66666763333333,
+    "bound": -65.66666666676387,
+    "ms": 0.06529199999999946,
+    "pass": true,
+    "check": {
+      "feasible": true,
+      "objective": -65.66666763333333,
+      "maxRowViolation": 1.6666666624587378e-7,
+      "maxBoundViolation": 0,
+      "maxIntegralityViolation": 0,
+      "error": null
+    }
+  },
+  {
+    "name": "lp-03",
+    "status": 7,
+    "objective": -124.00000015833334,
+    "bound": -124.0000000000952,
+    "ms": 0.06558300000000017,
+    "pass": true,
+    "check": {
+      "feasible": true,
+      "objective": -124.00000015833334,
+      "maxRowViolation": 1.0000000028043132e-7,
+      "maxBoundViolation": 0,
+      "maxIntegralityViolation": 0,
+      "error": null
+    }
+  },
+  {
+    "name": "lp-04",
+    "status": 7,
+    "objective": -334.500000975,
+    "bound": -334.50000000047373,
+    "ms": 0.18179100000000048,
+    "pass": true,
+    "check": {
+      "feasible": true,
+      "objective": -334.500000975,
+      "maxRowViolation": 2.0000000233721948e-7,
+      "maxBoundViolation": 0,
+      "maxIntegralityViolation": 0,
+      "error": null
+    }
+  },
+  {
+    "name": "lp-05",
+    "status": 7,
+    "objective": -67.99242483989897,
+    "bound": null,
+    "ms": 0.28216700000000117,
+    "pass": true,
+    "check": {
+      "feasible": true,
+      "objective": -67.99242483989897,
+      "maxRowViolation": 1.999999987845058e-7,
+      "maxBoundViolation": 0,
+      "maxIntegralityViolation": 0,
+      "error": null
+    }
+  },
+  {
+    "name": "lp-06",
+    "status": 7,
+    "objective": -34.00000013333334,
+    "bound": -34.00000000002875,
+    "ms": 0.03358300000000014,
+    "pass": true,
+    "check": {
+      "feasible": true,
+      "objective": -34.00000013333334,
+      "maxRowViolation": 6.666666862997772e-8,
+      "maxBoundViolation": 0,
+      "maxIntegralityViolation": 0,
+      "error": null
+    }
+  },
+  {
+    "name": "lp-07",
+    "status": 7,
+    "objective": -158.25000012499999,
+    "bound": -158.25000000007782,
+    "ms": 0.057875000000002785,
+    "pass": true,
+    "check": {
+      "feasible": true,
+      "objective": -158.25000012499999,
+      "maxRowViolation": 1.0000000116860974e-7,
+      "maxBoundViolation": 0,
+      "maxIntegralityViolation": 0,
+      "error": null
+    }
+  },
+  {
+    "name": "lp-08",
+    "status": 7,
+    "objective": -45.00000055625001,
+    "bound": -45.00000000011088,
+    "ms": 0.05624999999999858,
+    "pass": true,
+    "check": {
+      "feasible": true,
+      "objective": -45.00000055625001,
+      "maxRowViolation": 1.0000000116860974e-7,
+      "maxBoundViolation": 0,
+      "maxIntegralityViolation": 0,
+      "error": null
+    }
+  },
+  {
+    "name": "lp-09",
+    "status": 7,
+    "objective": -112.50000055,
+    "bound": -112.50000000006858,
+    "ms": 0.06604200000000304,
+    "pass": true,
+    "check": {
+      "feasible": true,
+      "objective": -112.50000055,
+      "maxRowViolation": 1.0000000072452053e-7,
+      "maxBoundViolation": 0,
+      "maxIntegralityViolation": 0,
+      "error": null
+    }
+  },
+  {
+    "name": "lp-10",
+    "status": 7,
+    "objective": -274.75000086041666,
+    "bound": null,
+    "ms": 0.15816699999999884,
+    "pass": true,
+    "check": {
+      "feasible": true,
+      "objective": -274.75000086041666,
+      "maxRowViolation": 1.0000000116860974e-7,
+      "maxBoundViolation": 0,
+      "maxIntegralityViolation": 0,
+      "error": null
+    }
+  },
+  {
+    "name": "lp-11",
+    "status": 7,
+    "objective": -165.9583339666667,
+    "bound": -165.95833333392056,
+    "ms": 0.25037499999999824,
+    "pass": true,
+    "check": {
+      "feasible": true,
+      "objective": -165.9583339666667,
+      "maxRowViolation": 1.999999987845058e-7,
+      "maxBoundViolation": 0,
+      "maxIntegralityViolation": 0,
+      "error": null
+    }
+  },
+  {
+    "name": "lp-12",
+    "status": 7,
+    "objective": -49.562500075,
+    "bound": null,
+    "ms": 0.04933399999999821,
+    "pass": true,
+    "check": {
+      "feasible": true,
+      "objective": -49.562500075,
+      "maxRowViolation": 9.999999761589606e-8,
+      "maxBoundViolation": 0,
+      "maxIntegralityViolation": 0,
+      "error": null
+    }
+  },
+  {
+    "name": "lp-13",
+    "status": 7,
+    "objective": -134.0000001,
+    "bound": -134.0000000000391,
+    "ms": 0.03500000000000014,
+    "pass": true,
+    "check": {
+      "feasible": true,
+      "objective": -134.0000001,
+      "maxRowViolation": 3.333333298272123e-8,
+      "maxBoundViolation": 0,
+      "maxIntegralityViolation": 0,
+      "error": null
+    }
+  },
+  {
+    "name": "lp-14",
+    "status": 7,
+    "objective": -157.2125003453125,
+    "bound": -157.2125000000756,
+    "ms": 0.05841699999999861,
+    "pass": true,
+    "check": {
+      "feasible": true,
+      "objective": -157.2125003453125,
+      "maxRowViolation": 9.999999999999998e-8,
+      "maxBoundViolation": 0,
+      "maxIntegralityViolation": 0,
+      "error": null
+    }
+  },
+  {
+    "name": "lp-15",
+    "status": 7,
+    "objective": -194.97500099083334,
+    "bound": null,
+    "ms": 0.08966600000000113,
+    "pass": true,
+    "check": {
+      "feasible": true,
+      "objective": -194.97500099083334,
+      "maxRowViolation": 1.333333354835986e-7,
+      "maxBoundViolation": 0,
+      "maxIntegralityViolation": 0,
+      "error": null
+    }
+  },
+  {
+    "name": "lp-16",
+    "status": 7,
+    "objective": -87.83333384166667,
+    "bound": -87.83333333353649,
+    "ms": 0.1430410000000002,
+    "pass": true,
+    "check": {
+      "feasible": true,
+      "objective": -87.83333384166667,
+      "maxRowViolation": 1.0000000116860974e-7,
+      "maxBoundViolation": 0,
+      "maxIntegralityViolation": 0,
+      "error": null
+    }
+  },
+  {
+    "name": "lp-17",
+    "status": 7,
+    "objective": -176.77777802777777,
+    "bound": -176.7777777779858,
+    "ms": 0.12108399999999975,
+    "pass": true,
+    "check": {
+      "feasible": true,
+      "objective": -176.77777802777777,
+      "maxRowViolation": 1.0000000116860974e-7,
+      "maxBoundViolation": 0,
+      "maxIntegralityViolation": 0,
+      "error": null
+    }
+  },
+  {
+    "name": "lp-18",
+    "status": 7,
+    "objective": -33.00000029166667,
+    "bound": -33.00000000007735,
+    "ms": 0.03691700000000253,
+    "pass": true,
+    "check": {
+      "feasible": true,
+      "objective": -33.00000029166667,
+      "maxRowViolation": 1.0000000116860974e-7,
+      "maxBoundViolation": 0,
+      "maxIntegralityViolation": 0,
+      "error": null
+    }
+  },
+  {
+    "name": "lp-19",
+    "status": 7,
+    "objective": -75.50000053333333,
+    "bound": -75.50000000003047,
+    "ms": 0.04366700000000279,
+    "pass": true,
+    "check": {
+      "feasible": true,
+      "objective": -75.50000053333333,
+      "maxRowViolation": 1.750000002687102e-7,
+      "maxBoundViolation": 0,
+      "maxIntegralityViolation": 0,
+      "error": null
+    }
+  },
+  {
+    "name": "lp-20",
+    "status": 7,
+    "objective": -218.750000275,
+    "bound": -218.75000000014427,
+    "ms": 0.07583299999999937,
+    "pass": true,
+    "check": {
+      "feasible": true,
+      "objective": -218.750000275,
+      "maxRowViolation": 9.99999993922529e-8,
+      "maxBoundViolation": 0,
+      "maxIntegralityViolation": 0,
+      "error": null
+    }
+  },
+  {
+    "name": "lp-21-infeasible",
+    "status": 8,
+    "objective": null,
+    "bound": null,
+    "ms": 0.016458000000000084,
+    "pass": true,
+    "check": null
+  },
+  {
+    "name": "lp-22-infeasible",
+    "status": 8,
+    "objective": null,
+    "bound": null,
+    "ms": 0.01483299999999943,
+    "pass": true,
+    "check": null
+  },
+  {
+    "name": "lp-23-unbounded",
+    "status": 10,
+    "objective": null,
+    "bound": null,
+    "ms": 0.013999999999999346,
+    "pass": true,
+    "check": null
+  },
+  {
+    "name": "lp-24-unbounded",
+    "status": 10,
+    "objective": null,
+    "bound": null,
+    "ms": 0.01208300000000051,
+    "pass": true,
+    "check": null
+  },
+  {
+    "name": "mip-01",
+    "status": 7,
+    "objective": 4.4999995749999995,
+    "bound": 4.4999995749999995,
+    "ms": 0.733082999999997,
+    "pass": true,
+    "check": {
+      "feasible": true,
+      "objective": 4.4999995749999995,
+      "maxRowViolation": 2.9999999995311555e-7,
+      "maxBoundViolation": 0,
+      "maxIntegralityViolation": 0,
+      "error": null
+    }
+  },
+  {
+    "name": "mip-02",
+    "status": 7,
+    "objective": -14.500000166666666,
+    "bound": -14.500000166666666,
+    "ms": 0.9924579999999992,
+    "pass": true,
+    "check": {
+      "feasible": true,
+      "objective": -14.500000166666666,
+      "maxRowViolation": 9.99999993922529e-8,
+      "maxBoundViolation": 0,
+      "maxIntegralityViolation": 0,
+      "error": null
+    }
+  },
+  {
+    "name": "mip-03",
+    "status": 7,
+    "objective": -138.00000002500002,
+    "bound": -138.00000002500002,
+    "ms": 0.15220800000000168,
+    "pass": true,
+    "check": {
+      "feasible": true,
+      "objective": -138.00000002500002,
+      "maxRowViolation": 1.0000000116860974e-7,
+      "maxBoundViolation": 0,
+      "maxIntegralityViolation": 0,
+      "error": null
+    }
+  },
+  {
+    "name": "mip-04",
+    "status": 7,
+    "objective": -55.50000019722222,
+    "bound": -55.50000019722222,
+    "ms": 2002.9039579999999,
+    "pass": true,
+    "check": {
+      "feasible": true,
+      "objective": -55.50000019722222,
+      "maxRowViolation": 1.666666671340522e-7,
+      "maxBoundViolation": 0,
+      "maxIntegralityViolation": 0,
+      "error": null
+    }
+  },
+  {
+    "name": "mip-05",
+    "status": 7,
+    "objective": -17,
+    "bound": -17.00000000001861,
+    "ms": 0.38237499999991087,
+    "pass": true,
+    "check": {
+      "feasible": true,
+      "objective": -17,
+      "maxRowViolation": 0,
+      "maxBoundViolation": 0,
+      "maxIntegralityViolation": 0,
+      "error": null
+    }
+  },
+  {
+    "name": "mip-06",
+    "status": 7,
+    "objective": 10,
+    "bound": 9.999999999985544,
+    "ms": 0.060709000000088054,
+    "pass": true,
+    "check": {
+      "feasible": true,
+      "objective": 10,
+      "maxRowViolation": 0,
+      "maxBoundViolation": 0,
+      "maxIntegralityViolation": 0,
+      "error": null
+    }
+  },
+  {
+    "name": "mip-07",
+    "status": 7,
+    "objective": -54.00000008333333,
+    "bound": -54.00000008333333,
+    "ms": 0.06787499999995816,
+    "pass": true,
+    "check": {
+      "feasible": true,
+      "objective": -54.00000008333333,
+      "maxRowViolation": 1.0000000028043132e-7,
+      "maxBoundViolation": 0,
+      "maxIntegralityViolation": 0,
+      "error": null
+    }
+  },
+  {
+    "name": "mip-08",
+    "status": 7,
+    "objective": -38.500000225,
+    "bound": -38.500000225,
+    "ms": 0.054291000000148415,
+    "pass": true,
+    "check": {
+      "feasible": true,
+      "objective": -38.500000225,
+      "maxRowViolation": 4.5000000170603016e-7,
+      "maxBoundViolation": 0,
+      "maxIntegralityViolation": 0,
+      "error": null
+    }
+  },
+  {
+    "name": "mip-09",
+    "status": 7,
+    "objective": -83,
+    "bound": -83.00000000009324,
+    "ms": 0.144457999999986,
+    "pass": true,
+    "check": {
+      "feasible": true,
+      "objective": -83,
+      "maxRowViolation": 0,
+      "maxBoundViolation": 0,
+      "maxIntegralityViolation": 0,
+      "error": null
+    }
+  },
+  {
+    "name": "mip-10",
+    "status": 7,
+    "objective": -23.66666675,
+    "bound": -23.66666675,
+    "ms": 0.031124999999974534,
+    "pass": true,
+    "check": {
+      "feasible": true,
+      "objective": -23.66666675,
+      "maxRowViolation": 1.2499999968440534e-7,
+      "maxBoundViolation": 0,
+      "maxIntegralityViolation": 0,
+      "error": null
+    }
+  },
+  {
+    "name": "mip-11",
+    "status": 7,
+    "objective": -20.000000025,
+    "bound": -20.000000025,
+    "ms": 0.04691699999989396,
+    "pass": true,
+    "check": {
+      "feasible": true,
+      "objective": -20.000000025,
+      "maxRowViolation": 1.0000000116860974e-7,
+      "maxBoundViolation": 0,
+      "maxIntegralityViolation": 0,
+      "error": null
+    }
+  },
+  {
+    "name": "mip-12",
+    "status": 7,
+    "objective": -24.333333499999995,
+    "bound": -24.333333499999995,
+    "ms": 0.1527920000000904,
+    "pass": true,
+    "check": {
+      "feasible": true,
+      "objective": -24.333333499999995,
+      "maxRowViolation": 9.999999761589606e-8,
+      "maxBoundViolation": 0,
+      "maxIntegralityViolation": 0,
+      "error": null
+    }
+  },
+  {
+    "name": "mip-13",
+    "status": 7,
+    "objective": -27.0000004,
+    "bound": -27.0000004,
+    "ms": 4.335125000000062,
+    "pass": true,
+    "check": {
+      "feasible": true,
+      "objective": -27.0000004,
+      "maxRowViolation": 3.0000000084129397e-7,
+      "maxBoundViolation": 0,
+      "maxIntegralityViolation": 0,
+      "error": null
+    }
+  },
+  {
+    "name": "mip-14",
+    "status": 7,
+    "objective": -24.000000749999998,
+    "bound": -24.000000749999998,
+    "ms": 0.5773329999999532,
+    "pass": true,
+    "check": {
+      "feasible": true,
+      "objective": -24.000000749999998,
+      "maxRowViolation": 2.0000000056086265e-7,
+      "maxBoundViolation": 0,
+      "maxIntegralityViolation": 0,
+      "error": null
+    }
+  },
+  {
+    "name": "mip-15",
+    "status": 7,
+    "objective": -27,
+    "bound": -27.000000000019973,
+    "ms": 11.47087499999975,
+    "pass": true,
+    "check": {
+      "feasible": true,
+      "objective": -27,
+      "maxRowViolation": 0,
+      "maxBoundViolation": 0,
+      "maxIntegralityViolation": 0,
+      "error": null
+    }
+  },
+  {
+    "name": "sudoku-easy",
+    "status": 7,
+    "objective": 0,
+    "bound": 0,
+    "ms": 0.18566599999985556,
+    "pass": true,
+    "check": {
+      "feasible": true,
+      "objective": 0,
+      "maxRowViolation": 0,
+      "maxBoundViolation": 0,
+      "maxIntegralityViolation": 0,
+      "error": null
+    }
+  },
+  {
+    "name": "sudoku-hard",
+    "status": 7,
+    "objective": 0,
+    "bound": 0,
+    "ms": 0.44212500000003274,
+    "pass": true,
+    "check": {
+      "feasible": true,
+      "objective": 0,
+      "maxRowViolation": 0,
+      "maxBoundViolation": 0,
+      "maxIntegralityViolation": 0,
+      "error": null
+    }
+  },
+  {
+    "name": "tsp-8",
+    "status": 7,
+    "objective": 282,
+    "bound": 281.99999999905367,
+    "ms": 0.8322919999995975,
+    "pass": true,
+    "check": {
+      "feasible": true,
+      "objective": 282,
+      "maxRowViolation": 0,
+      "maxBoundViolation": 0,
+      "maxIntegralityViolation": 0,
+      "error": null
+    }
+  },
+  {
+    "name": "tsp-10",
+    "status": 7,
+    "objective": 320,
+    "bound": 319.99999999440877,
+    "ms": 5.105290999999852,
+    "pass": true,
+    "check": {
+      "feasible": true,
+      "objective": 320,
+      "maxRowViolation": 0,
+      "maxBoundViolation": 0,
+      "maxIntegralityViolation": 0,
+      "error": null
+    }
+  },
+  {
+    "name": "tsp-12",
+    "status": 7,
+    "objective": 279,
+    "bound": 278.9999999855052,
+    "ms": 215.87866600000007,
+    "pass": true,
+    "check": {
+      "feasible": true,
+      "objective": 279,
+      "maxRowViolation": 0,
+      "maxBoundViolation": 0,
+      "maxIntegralityViolation": 0,
+      "error": null
+    }
+  }
+]

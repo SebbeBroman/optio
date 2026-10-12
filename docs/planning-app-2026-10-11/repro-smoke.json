@@ -1,0 +1,119 @@
+[
+  {
+    "scenario": "small",
+    "seconds": 2,
+    "seeded": true,
+    "reference": {
+      "status": "HighsModelStatus.kOptimal",
+      "objective": 314.9,
+      "gap": 0,
+      "dual_bound": 314.90000000000003,
+      "seconds": 0.0042629241943359375
+    },
+    "optio": {
+      "status": 7,
+      "objective": 314.9,
+      "ms": 3.238665999999739,
+      "firstIncumbentMs": 2.192207999999937,
+      "incumbents": 1,
+      "dualBound": 314.89999998612154,
+      "nodes": 0,
+      "iterations": 0,
+      "timing": {
+        "presolve": 0.00014770800000007966,
+        "heuristic": 0.00008254200000035183,
+        "local_search": 0,
+        "root_cuts": 0,
+        "bound_certificate": 0.0010033329999998841,
+        "branch_and_bound": 0
+      }
+    },
+    "check": {
+      "feasible": true,
+      "objective": 314.9,
+      "maxRowViolation": 0,
+      "maxBoundViolation": 0,
+      "maxIntegralityViolation": 0,
+      "error": null
+    },
+    "gap": 0
+  },
+  {
+    "scenario": "medium",
+    "seconds": 2,
+    "seeded": true,
+    "reference": {
+      "status": "HighsModelStatus.kOptimal",
+      "objective": 3096.8,
+      "gap": 0,
+      "dual_bound": 3096.8,
+      "seconds": 0.43199992179870605
+    },
+    "optio": {
+      "status": 7,
+      "objective": 3096.8,
+      "ms": 80.82458300000008,
+      "firstIncumbentMs": 1.2457079999999223,
+      "incumbents": 2,
+      "dualBound": 3096.799999999998,
+      "nodes": 0,
+      "iterations": 0,
+      "timing": {
+        "presolve": 0.0011281250000001464,
+        "heuristic": 0.000047416999999772,
+        "local_search": 0.04804587500000057,
+        "root_cuts": 0,
+        "bound_certificate": 0.031553916999999654,
+        "branch_and_bound": 0
+      }
+    },
+    "check": {
+      "feasible": true,
+      "objective": 3096.8,
+      "maxRowViolation": 0,
+      "maxBoundViolation": 0,
+      "maxIntegralityViolation": 0,
+      "error": null
+    },
+    "gap": 0
+  },
+  {
+    "scenario": "large",
+    "seconds": 2,
+    "seeded": true,
+    "reference": {
+      "status": "HighsModelStatus.kTimeLimit",
+      "objective": null,
+      "gap": null,
+      "dual_bound": 4028.4000000000005,
+      "seconds": 2.0731868743896484
+    },
+    "optio": {
+      "status": 7,
+      "objective": 4028.4,
+      "ms": 113.6566670000002,
+      "firstIncumbentMs": 9.040500000000065,
+      "incumbents": 2,
+      "dualBound": 4028.399999740922,
+      "nodes": 0,
+      "iterations": 0,
+      "timing": {
+        "presolve": 0.008195082999999936,
+        "heuristic": 0.0003926249999999243,
+        "local_search": 0.10240679199999958,
+        "root_cuts": 0,
+        "bound_certificate": 0.0018986250000003757,
+        "branch_and_bound": 0
+      }
+    },
+    "check": {
+      "feasible": true,
+      "objective": 4028.4,
+      "maxRowViolation": 0,
+      "maxBoundViolation": 0,
+      "maxIntegralityViolation": 0,
+      "error": null
+    },
+    "gap": null
+  }
+]

@@ -1,0 +1,10 @@
+{
+  "before": {
+    "rawBytes": 267631,
+    "brotliBytes": 95238
+  },
+  "after": {
+    "rawBytes": 272861,
+    "brotliBytes": 96858
+  }
+}

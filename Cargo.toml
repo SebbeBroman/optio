@@ -1,0 +1,26 @@
+[workspace]
+resolver = "2"
+members = ["crates/core", "crates/bench", "crates/wasm"]
+
+[workspace.package]
+version = "0.0.1"
+edition = "2021"
+license = "MIT"
+repository = "https://github.com/SebbeBroman/optio"
+
+[workspace.dependencies]
+rayon = "1"
+crossbeam-deque = "0.8"
+wasm-bindgen = "=0.2.114"
+js-sys = "0.3"
+
+[profile.release]
+opt-level = 3
+lto = "fat"
+codegen-units = 1
+panic = "abort"
+
+# Size-first profile for the wasm artifact.
+[profile.release-small]
+inherits = "release"
+opt-level = "z"

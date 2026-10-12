@@ -1,0 +1,18 @@
+{
+  "Optio": {
+    "raw": 146861,
+    "brotli": 57061
+  },
+  "HiGHS": {
+    "raw": 2926666,
+    "brotli": 708768
+  },
+  "GLPK": {
+    "raw": 294072,
+    "brotli": 107111
+  },
+  "HiGHS_minimal": {
+    "raw": 1379690,
+    "brotli": 403186
+  }
+}

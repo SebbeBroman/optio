@@ -1,0 +1,16 @@
+{
+  "planning-faithful": {
+    "feasible": false,
+    "objective": 167.43333333608268,
+    "maxRowViolation": 1.7782980522156312e-06,
+    "maxBoundViolation": 0.0,
+    "maxIntegralityViolation": 0.0
+  },
+  "planning-l": {
+    "feasible": false,
+    "objective": 9064.73999998306,
+    "maxRowViolation": 1.321979652857408e-06,
+    "maxBoundViolation": 0.0,
+    "maxIntegralityViolation": 0.0
+  }
+}
