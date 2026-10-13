@@ -9,7 +9,7 @@ differential oracle (`harness/`) as the spine.
 
 ## Update — 2026-10-12
 
-The [2122 parity batch](docs/2122-parity-2026-10-12/README.md) closes the last
+The 2122 parity batch closes the last
 proof-count gap: **both Optio native and WASM now prove 50 optima at 20 seconds,
 matching native HiGHS (50)**. The new proof is `2122`, optimal
 −187 612.944194 with dual bound −187 612.944176 (native 12.1 s, WASM 18.9 s,
@@ -24,7 +24,7 @@ bound-magnitude-scaled box check. No previous proofs or witnesses were lost
 
 ## Update — 2026-10-11
 
-The [proof-engine batch](docs/proof-foundation-2026-10-11/README.md) resolves the
+The proof-engine batch resolves the
 `exceeds_stack` proof loss: both runtimes prove 1354 in seven nodes (3.3 ms native,
 23.7 ms WASM in the cold suite). It uses a general bounded objective-count
 reformulation, preserving every original constraint. Both runtimes now complete
@@ -65,8 +65,8 @@ Small without a seed remains faster in native HiGHS (0.2 ms versus 4.8 ms).
 The scheduling path shares identical templates, merges equal aggregate day-load
 states, and packs round demands into balanced sessions. Two checked lower-bound
 certificates avoid branching. This does not add general symmetry detection to
-branch-and-bound. Full results, bounds, phase timings, hashes, and reproduction:
-[planning app report](docs/planning-app-2026-10-11/README.md).
+branch-and-bound. Full results, bounds, phase timings, hashes, and reproduction
+live in the internal experiment records.
 
 ## Repro (self-contained)
 
@@ -171,7 +171,7 @@ infeasibility fixtures in `harness/fixtures` (e.g. `planning-infeasible.lp`) via
 
 ### Further speed measurements
 
-The incremental follow-up in [planning-speed-2026-10-11](docs/planning-speed-2026-10-11/README.md)
+The incremental follow-up batch
 uses seven alternating runs against the already corrected solver: seeded medium
 WASM 85.65→65.60 ms, large 148.46→55.25 ms; native medium 28.55→12.60 ms,
 large 64.34→15.39 ms. All optima and conservative bounds remain checked.

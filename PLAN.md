@@ -12,8 +12,7 @@ quality and performance.
 
 ## 1. Target problem shape
 
-From `apps/web/src/.../planning/mip-plan.ts`, a run is an event-scheduling /
-packing MILP:
+The target planning run is an event-scheduling / packing MILP:
 
 - **Decision variables** (all integer/binary):
   - `y[unit]` — binary: which day the unit's finals land on.
@@ -73,10 +72,10 @@ instances and compares. Solver status alone is insufficient.
 
 ### 2.1 Next proof-performance priorities
 
-The [20-second suite comparison](docs/suite-20s-2026-10-11/README.md) is the
+The 20-second suite comparison is the
 baseline: both Optio builds prove 48 optima versus 50 for native HiGHS, and leave
 eight supported fixtures unresolved. The
-[2122 parity batch](docs/2122-parity-2026-10-12/README.md) closes that gap — both
+2122 parity batch closes that gap — both
 Optio builds now prove **50** optima, matching native HiGHS. Priorities now:
 
 1. Close `life_goe.mod` and `planning-faithful`, which HiGHS proves and Optio
@@ -95,7 +94,7 @@ native and WASM. Track candidate latency, objective quality, dual-bound progress
 nodes, Phase I work, LP fallback reasons, and actual elapsed time. Improvements
 must preserve independently checked witnesses and valid proof claims.
 
-The [first proof-engine batch](docs/proof-foundation-2026-10-11/README.md) adds
+The first proof-engine batch adds
 fallback diagnostics and endpoint repair, node propagation, reliability-based
 strong branching with child-LP reuse, bounded objective-count reformulation,
 integer-objective bound rounding, configurable
@@ -112,7 +111,7 @@ dual verification, and better infeasible-basis recovery remain open work.
 optio/
   crates/
     core/   optio-core   model IR, presolve, LP, MIP, heuristics
-    wasm/   optio-wasm   wasm-bindgen bindings (highs-js-compatible surface)
+    wasm/   optio-wasm   wasm-bindgen bindings (HiGHS-inspired surface)
     bench/  optio-bench  native CLI + differential oracle runner
 ```
 
@@ -129,7 +128,7 @@ optio/
 1. **Presolve** — bound tightening, empty/singleton rows and cols, coefficient
    tightening, duplicate detection, and domain-aware symmetry breaking (rings with
    identical availability + lock state are interchangeable).
-2. **Primal heuristics (highest priority)** — seed from the app's greedy plan /
+2. **Primal heuristics (highest priority)** — seed from the caller's greedy plan /
    current plan; then feasibility pump + a structure-aware local search that
    minimizes ring-load range/peak by moving individual matches. Reports incumbents
    via callback as soon as they are feasible.
@@ -161,13 +160,13 @@ optio/
 - Pre-size linear memory per solve to avoid `memory.grow` stalls.
 
 ### 3.5 API compatibility
-`optio-wasm` implements the `highs-js` extended surface the app already uses:
+The npm package implements a HiGHS-inspired surface:
 `createModel` / `withModel`, `addVar`, `addRow({indices,values})`, `changeColCost`,
 `changeColIntegrality`, `passColName`/`passRowName`, `setSolution`, `run({callbacks})`
-(`mipLogging`, `mipImprovingSolution`, `mipInterrupt`), `getModelStatus`,
+(`onProgress`, `onIncumbent`, `interrupt`), `getModelStatus`,
 `getObjectiveValue`, `getSolution().colValue`, `info.get(...)`, `getIis`,
-`exportModel('lp')`, `options.set`, `dispose`. A thin TS shim maps it onto the
-`highs` import so `mip-plan.ts` can switch implementations behind a flag.
+`exportModel('lp')`, `options.set`, `dispose`, so solver call sites migrate
+easily.
 
 ## 4. Phases & milestones
 
@@ -176,7 +175,7 @@ optio/
 | **P0 (done)** | workspace, model IR, oracle, wasm stub, native bench | `cargo test` green; oracle validates a model |
 | **P1** | presolve-lite + dual-simplex LP relaxation | solves LP fixtures to optimality; matches HiGHS on random LPs |
 | **P2** | B&B + primal heuristics + anytime/warm-start/early-stop | differential vs HiGHS on planning models: parity on feasibility/`unplaced`, no worse objective at matched limits; proof and timing losses tracked as bugs |
-| **P3** | `optio-wasm` + TS shim | drop-in in `mip-plan.ts` behind a flag; in-browser run; brotli < HiGHS |
+| **P3** | `optio-wasm` + npm package | drop-in for planning call sites behind a flag; in-browser run; brotli < HiGHS |
 | **P4** | native rayon parallelism, memory/arena tuning, symmetry + first cuts | speedup scales with cores; no data races under a stress harness |
 | **P5** | polish: IIS, `exportModel('lp')`, options/info, statuses, docs | app feature-complete vs `highs-js`; docs + examples |
 
@@ -186,9 +185,9 @@ optio/
 |---|---|
 | simplex numerical robustness | start with a simple, heavily fuzzed dual simplex; random-LP differential tests against HiGHS; scale + tolerances explicit |
 | AI-authored correctness | oracle-first, adversarial review, small runnable increments (Bun/pgrust recipe) |
-| scope creep into full MIPLIB parity | hold the line at "LP + MILP for this app's class"; cuts deferred to P4 |
+| scope creep into full MIPLIB parity | hold the line at "LP + MILP for this workload class"; cuts deferred to P4 |
 | wasm timing/memory pitfalls | injected clock; pre-sized memory; zero-copy views |
-| divergence from app needs | drive every phase with real planning instances + the app's callbacks |
+| divergence from app needs | drive every phase with real planning instances + the incumbent/interrupt callbacks |
 
 ## 6. Working method / budget
 

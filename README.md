@@ -12,7 +12,7 @@ is rarely required. See [`PLAN.md`](./PLAN.md) for the full design and roadmap.
 The core implements LP simplex, presolve, branch-and-bound, primal planning
 heuristics, and native parallel search. The real app scheduling fixtures now
 reach checked optima in native and WASM, with verified lower bounds and shared
-identical-group templates. See the [measured app report](docs/planning-app-2026-10-11/README.md).
+identical-group templates.
 
 Known losses vs HiGHS, each with a self-contained repro, live in
 [`LOSSES.md`](./LOSSES.md).

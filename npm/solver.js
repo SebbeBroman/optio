@@ -20,7 +20,7 @@
  * model.dispose();
  * ```
  *
- * Ported from the app-side shim in `crates/wasm/ts/`; the package
+ * Ported from the app-side shim; the package
  * version guards against use before `init()` and exposes `wasInterrupted()`.
  */
 

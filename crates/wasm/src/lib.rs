@@ -10,9 +10,8 @@
 //! can run both.
 //!
 //! Naming note: `wasm-bindgen` exposes the Rust identifiers verbatim, so the JS
-//! surface is `snake_case` (`add_var`, `pass_col_name`). The thin TypeScript
-//! shim in `crates/wasm/ts/highs-shim.ts` maps the app's `highs` import
-//! (`addVar`, `passColName`, ...) onto these.
+//! surface is `snake_case` (`add_var`, `pass_col_name`); the high-level npm
+//! package surface (`createSolver`) maps camelCase names onto these.
 #![cfg(target_arch = "wasm32")]
 
 use core::cell::Cell;

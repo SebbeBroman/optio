@@ -53,7 +53,7 @@ Outputs `oracle-report.json` (one record per fixture, both solvers).
   timeslot IDs replaced with `c#`/`r#`). Although it came from the app's
   infeasible/IIS branch, native HiGHS found an independently checked feasible
   solution in the 120-second certification run. It is retained as `planning-export`; see
-  `../docs/optimality-2026-10-11/README.md` and `fixtures/certified-bounds.json`.
+  `fixtures/certified-bounds.json`.
 
 - `planning-infeasible` — a capacity-shortage regression derived from `planning-s`,
   with each of its six ring capacities set to one. Unit 0 alone needs
@@ -148,14 +148,14 @@ For small instances the ground truth can also be obtained exactly
 checked arithmetically by `src/checker.mjs` / the python checker in the tool.
 
 
-Planning timing and shared native/WASM improvements are measured in
-[the 2026-10-11 performance report](../docs/planning-improvements-2026-10-11/README.md).
+Planning timing and shared native/WASM improvements are measured with the
+internal benchmark tooling.
 `planning-timing.mjs` emits phase times and node-LP counters;
 `planning-improvement-bench.py` alternates frozen before/after builds;
 `native-certification-smoke.py` rechecks every fixture at 120 seconds/eight workers.
 
-The real app fixtures and identical-group scheduling path are measured in
-[the app performance report](../docs/planning-app-2026-10-11/README.md).
+The real app fixtures and identical-group scheduling path are measured with the
+internal benchmark tooling.
 `planning-app-bench.py` compares identical CSR models and starts against native
 HiGHS with zero requested gaps. `planning-timing.mjs` accepts `--start <json>`
 and reports `time_bound_certificate_secs` alongside LP/search counters.

@@ -40,3 +40,9 @@ oracle-venv/
 /docs/**/validated-results.json
 /docs/**/warm-wasm.json
 /docs/**/web-smoke.json
+
+# Internal working notes and experiment records (kept on disk, not in git).
+/HANDOVER.md
+/ts/PORTING.md
+/docs/
+/crates/wasm/ts/
