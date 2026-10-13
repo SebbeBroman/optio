@@ -17,6 +17,10 @@
 #
 # Set OPTIO_NO_WASM_OPT=1 to skip the post-link `wasm-opt -Oz` size pass.
 #
+# The wasm build remaps $HOME out of embedded paths (`--remap-path-prefix`)
+# so panic Location strings do not carry the build machine's layout into the
+# published binary.
+#
 # Size: when a nightly toolchain with `rust-src` is available, the build uses
 # `-Z build-std=std,panic_abort` with `-C panic=immediate-abort`, which drops
 # panic machinery. Current measured package sizes are recorded in the
@@ -44,13 +48,18 @@ fi
 
 if [[ "$use_nightly" == "1" ]]; then
   echo "build: nightly + build-std + panic=immediate-abort"
-  RUSTFLAGS="-C target-feature=+simd128 -Zunstable-options -Cpanic=immediate-abort" \
+  RUSTFLAGS="-C target-feature=+simd128 -Zunstable-options -Cpanic=immediate-abort --remap-path-prefix=$HOME=" \
     cargo +nightly build -p optio-wasm --target wasm32-unknown-unknown \
       --profile release-small "${allocator_args[@]}" \
       -Z build-std=std,panic_abort
 else
   echo "build: stable (set up nightly + rust-src for the smaller immediate-abort build)"
-  cargo build -p optio-wasm --target wasm32-unknown-unknown --profile release-small "${allocator_args[@]}"
+  # RUSTFLAGS replaces [target.wasm32-unknown-unknown] rustflags from
+  # .cargo/config.toml, so simd128 must be repeated here. The remap keeps
+  # $HOME-derived paths (rustup/cargo registry locations embedded in panic
+  # Location strings) out of the shipped .wasm.
+  RUSTFLAGS="--remap-path-prefix=$HOME= -C target-feature=+simd128" \
+    cargo build -p optio-wasm --target wasm32-unknown-unknown --profile release-small "${allocator_args[@]}"
 fi
 
 wasm-bindgen \
